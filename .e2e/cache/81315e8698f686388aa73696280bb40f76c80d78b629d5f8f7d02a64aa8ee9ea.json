@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.613Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Scout\" into textbox \"e.g. Max\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Max",
+          "placeholder": "e.g. Max"
+        },
+        "value": "Scout"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Labrador Retriever\" into textbox \"e.g. Golden Retriever\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Golden Retriever",
+          "placeholder": "e.g. Golden Retriever"
+        },
+        "value": "Labrador Retriever"
+      },
+      {
+        "name": "type",
+        "summary": "type \"4\" into spinbutton \"e.g. 3\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "e.g. 3",
+          "placeholder": "e.g. 3"
+        },
+        "value": "4"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Not yet trained\" into textbox \"e.g. Scout is trained to calm me during…\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Scout is trained to calm me during anxiety episodes",
+          "placeholder": "e.g. Scout is trained to calm me during anxiety episodes"
+        },
+        "value": "Not yet trained"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Female\"",
+        "target": {
+          "role": "button",
+          "name": "Female"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "72f535edd61e6a8bc4aed6fd2c1bd2a119699f23208cbf88a9ca6959e23532af",
+      "paramsDigest": "15b5df1df3eb662812fc5036d0a36f48bc53b79895915ee185060e3aaee429d1",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Entered Scout, Labrador Retriever, age 4, Female, and “Not yet trained” on Dog Information, then continued. The page advanced to /psd/onboarding?step=psd_depression_sad (“In the past two weeks, have you felt sad or down?”). Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_pet_details",
+    "endPath": "/psd/onboarding?step=psd_depression_sad",
+    "endAnchors": [
+      {
+        "text": "In the past two weeks, have you felt sad or down?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Dog Information"
+      },
+      {
+        "role": "image",
+        "name": "Dog"
+      },
+      {
+        "text": "Your Dog"
+      },
+      {
+        "text": "Tell us about your service dog"
+      },
+      {
+        "text": "Dog name *"
+      },
+      {
+        "role": "textbox",
+        "name": "e.g. Max",
+        "placeholder": "e.g. Max"
+      },
+      {
+        "text": "Dog breed *"
+      },
+      {
+        "role": "textbox",
+        "name": "e.g. Golden Retriever",
+        "placeholder": "e.g. Golden Retriever"
+      }
+    ],
+    "endWaitMs": 13479,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

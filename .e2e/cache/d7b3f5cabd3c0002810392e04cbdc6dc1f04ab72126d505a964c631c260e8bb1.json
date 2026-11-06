@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-02T08:25:55.585Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"New Patient\"",
+        "target": {
+          "role": "button",
+          "name": "New Patient"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap combobox \"Select State\"",
+        "target": {
+          "role": "combobox",
+          "name": "Select State",
+          "placeholder": "Select State"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap option \"California\"",
+        "target": {
+          "role": "option",
+          "name": "California"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"I Acknowledge & Continue\"",
+        "target": {
+          "role": "button",
+          "name": "I Acknowledge & Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Housing\"",
+        "target": {
+          "role": "button",
+          "name": "Housing"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/example.e2e.ts::AI%20completes%20ESA%20onboarding%20up%20to%20patient%20details",
+      "targetId": "web",
+      "instructionDigest": "245685cfaae89a0275af795f1d450bb4956b7315f7ec06ce92610062d42af019",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "New-patient ESA path reached the Fair Housing Act page: New Patient, California, compliance acknowledged, Yes to the ESA letter question, walkthrough continued, Housing selected. Screen shows “Your ESA letter will comply with The Fair Housing Act.” with compliance details and a Continue button.",
+    "startPath": "/esa/welcome",
+    "endPath": "/esa/onboarding?step=esa_fair_housing",
+    "endAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Your ESA letter will comply with"
+      },
+      {
+        "text": "The Fair Housing Act."
+      },
+      {
+        "role": "heading",
+        "name": "Compliant letters include the clinician's license number, contact information, and letterhead."
+      },
+      {
+        "role": "heading",
+        "name": "The Fair Housing Act requires all landlords to accept compliant letters."
+      },
+      {
+        "role": "heading",
+        "name": "We help ensure your documentation includes the details housing providers need to review your request."
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Welcome"
+      },
+      {
+        "text": "Get Your"
+      },
+      {
+        "text": "Emotional Support Animal Letter"
+      },
+      {
+        "role": "image",
+        "name": "state"
+      },
+      {
+        "text": "YOUR STATE"
+      },
+      {
+        "text": "PATIENT NAME"
+      },
+      {
+        "role": "image",
+        "name": "Medical Professional Signature"
+      },
+      {
+        "role": "image",
+        "name": "Certified"
+      }
+    ],
+    "endWaitMs": 17052,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

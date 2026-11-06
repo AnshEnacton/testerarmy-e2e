@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:05:10.349Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"PSD letter\"",
+        "target": {
+          "role": "link",
+          "name": "PSD letter"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" in \"Need Wellness Wag help? Ask Sophie.\"",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "within": "Need Wellness Wag help? Ask Sophie."
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap link \"Get started\"",
+        "target": {
+          "role": "link",
+          "name": "Get started"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"New Patient\"",
+        "target": {
+          "role": "button",
+          "name": "New Patient"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap combobox \"Select State\"",
+        "target": {
+          "role": "combobox",
+          "name": "Select State",
+          "placeholder": "Select State"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap option \"California\"",
+        "target": {
+          "role": "option",
+          "name": "California"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"I Acknowledge & Continue\"",
+        "target": {
+          "role": "button",
+          "name": "I Acknowledge & Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Travel\"",
+        "target": {
+          "role": "button",
+          "name": "Travel"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Within 2-3 Days\"",
+        "target": {
+          "role": "button",
+          "name": "Within 2-3 Days"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "6350af1b4e0b595c6690f22c5e7d0ae5ab6f56f69c971e6885a3a74235c31bd7",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Opened PSD letter, clicked Get started, selected New Patient and California, acknowledged compliance, answered Yes to needing a PSD letter, chose Travel, answered the dog is not trained, continued past the ACAA screen, chose Within 2-3 Days, and answered Yes to being 18 or older. Stopped on the Dat…",
+    "startPath": "/services",
+    "endPath": "/psd/onboarding?step=psd_date_of_birth",
+    "endAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Date of Birth"
+      },
+      {
+        "role": "textbox",
+        "name": "MM/DD/YYYY",
+        "placeholder": "MM/DD/YYYY"
+      },
+      {
+        "role": "button",
+        "name": "Date of Birth"
+      },
+      {
+        "text": "Your full date of birth (MM/DD/YYYY)"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "link",
+        "name": "Terms & Conditions"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "name": "Home"
+      },
+      {
+        "name": "Lemonade",
+        "text": "Lemon…"
+      },
+      {
+        "name": "Pet Insurance"
+      },
+      {
+        "name": "ESA letter"
+      },
+      {
+        "name": "PSD letter"
+      },
+      {
+        "name": "Parking Permit"
+      },
+      {
+        "name": "Doctor's Note"
+      },
+      {
+        "name": "Tinted Window"
+      }
+    ],
+    "endWaitMs": 15683,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

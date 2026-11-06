@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-02T08:13:51.626Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "check",
+        "summary": "check checkbox \"Call the lab\"",
+        "target": {
+          "role": "checkbox",
+          "name": "Call the lab"
+        },
+        "checked": true
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "lab/tests/agent-board.e2e.ts::agent%20on%20the%20board::adds%20a%20task%20and%20marks%20it%20done",
+      "targetId": "harbor",
+      "instructionDigest": "697d011c7eac08f698f69af39ed455c417cc5bef7691e2f175863b42e7b32a6d",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Marked \"Call the lab\" done by checking its checkbox. The checkbox is now checked and Open tasks reads \"1 open\".",
+    "startPath": "/board",
+    "endPath": "/board",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Open tasks",
+        "text": "1 open"
+      },
+      {
+        "role": "checkbox",
+        "name": "Call the lab",
+        "states": [
+          "checked"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Open tasks",
+        "text": "2 open"
+      },
+      {
+        "role": "checkbox",
+        "name": "Call the lab"
+      }
+    ],
+    "endWaitMs": 12725,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f9f49ed79c2662c7f6e0522da33af26cd0588919fce8b674530ba7c83e5d217c",
+      "agentContextDigest": "a010b0d69a8af9f6cebfb2ada0fd8f907805de3a6b55d928f52caf97220586dd"
+    }
+  }
+}

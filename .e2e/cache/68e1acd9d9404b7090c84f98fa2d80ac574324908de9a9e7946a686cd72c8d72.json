@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.618Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "ec5e4f28165ea232f437adbab457bb90241d25e46127a000c0d46b186a7417d0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Selected Yes on “Have you found it hard to enjoy things you usually like?” The page advanced to /psd/onboarding?step=psd_irritable (“During this time have you felt more angry and irritable than usual?”). Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_depression_enjoyment",
+    "endPath": "/psd/onboarding?step=psd_irritable",
+    "endAnchors": [
+      {
+        "text": "During this time have you felt more angry and irritable than usual?"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Have you found it hard to enjoy things you usually like?"
+      }
+    ],
+    "endWaitMs": 16594,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

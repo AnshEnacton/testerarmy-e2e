@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.460Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "bfadf693c5f94733b0adc04b13e028bca54e2c2ab7315b2336283f8cab058a47",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose No on “Do you need any additional paperwork other than the standard ESA Letter?”. The page moved to /esa/onboarding?step=esa_got_you_covered and shows “If you need more than just the standard ESA Letter We got you covered!” with a Continue button. That later step was not answered.",
+    "startPath": "/esa/onboarding?step=esa_additional_paperwork",
+    "endPath": "/esa/onboarding?step=esa_got_you_covered",
+    "endAnchors": [
+      {
+        "text": "If you need more than just the standard ESA Letter"
+      },
+      {
+        "text": "We got you covered!"
+      },
+      {
+        "text": "Our Wellness Wag team is here to make the process as smooth and stress-free as possible for pet owners."
+      },
+      {
+        "role": "heading",
+        "name": "We'll help you with all your additional documents if extra paperwork is required."
+      },
+      {
+        "role": "heading",
+        "name": "Our licensed professionals are ready to address any questions from landlords, housing associations, or property managers, ensuring smooth communication and approval."
+      },
+      {
+        "role": "heading",
+        "name": "We'll guide you through the next steps and help keep your documentation complete and organized."
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "heading",
+        "name": "If you need more than just the standard ESA Letter We got you covered!"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Do you need any additional paperwork other than the standard ESA Letter?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "I'm not sure"
+      },
+      {
+        "role": "image",
+        "name": "A dog and a cat"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      },
+      {
+        "role": "button",
+        "name": "I'm not sure"
+      }
+    ],
+    "endWaitMs": 42603,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

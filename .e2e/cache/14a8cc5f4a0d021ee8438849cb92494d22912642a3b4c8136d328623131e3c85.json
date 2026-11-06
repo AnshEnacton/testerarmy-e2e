@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T09:20:42.286Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Got it\" in \"We and our partners use tracking techno…\"",
+        "target": {
+          "role": "button",
+          "name": "Got it",
+          "within": "We and our partners use tracking technologies to collect data about you and you…"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"New Patient\"",
+        "target": {
+          "role": "button",
+          "name": "New Patient"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-placard.e2e.ts::new%20patient%20reaches%20ParkingMD%20placard%20checkout",
+      "targetId": "web",
+      "instructionDigest": "2b8aace282e3091297a5a12add57cfb8ff7aa297ddd0a74f9543f43e01348483",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Dismissed the cookie notice and chose New Patient. The portal advanced to /placard/choose-state?state=ca and shows “What state do you live in?” with a disabled state picker still loading.",
+    "startPath": "https://patient.parkingmd.com/placard/welcome?state=ca",
+    "endPath": "https://patient.parkingmd.com/placard/choose-state?state=ca",
+    "endAnchors": [
+      {
+        "text": "Location"
+      },
+      {
+        "role": "heading",
+        "name": "What state do you live in?"
+      },
+      {
+        "role": "combobox",
+        "name": "Select State",
+        "placeholder": "Select State",
+        "value": "California"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "link",
+        "name": "Log in"
+      },
+      {
+        "text": "Already have an account? Log in"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Welcome"
+      },
+      {
+        "role": "heading",
+        "name": "Welcome!"
+      },
+      {
+        "role": "heading",
+        "name": "Are you a new or existing patient?"
+      },
+      {
+        "role": "button",
+        "name": "New Patient"
+      },
+      {
+        "role": "link",
+        "name": "Existing Patient"
+      },
+      {
+        "role": "image",
+        "name": "ParkingMd"
+      },
+      {
+        "text": "We and our partners use tracking technologies to collect data about you and your site interactions, personalize ads, and improve our services. See our Privacy Policy to learn more and manage your privacy choices."
+      },
+      {
+        "role": "button",
+        "name": "More information"
+      }
+    ],
+    "endWaitMs": 13992,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

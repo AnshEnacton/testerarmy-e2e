@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.587Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "2255a7e5daddab06a1cf89f00bd2d1459dbd9a0efd547e0a2c6bb9e2f93f1934",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Clicked Continue on the PSD walkthrough. The page is now /psd/onboarding?step=psd_reason with “Why does your dog need PSD Training?” and Travel, Public Access, and Other choices. Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_walkthrough",
+    "endPath": "/psd/onboarding?step=psd_reason",
+    "endAnchors": [
+      {
+        "text": "Why does your dog need PSD Training?"
+      },
+      {
+        "text": "Travel"
+      },
+      {
+        "text": "Public Access"
+      },
+      {
+        "text": "Other"
+      },
+      {
+        "role": "image",
+        "name": "A service dog"
+      },
+      {
+        "role": "button",
+        "name": "Travel"
+      },
+      {
+        "role": "button",
+        "name": "Public Access"
+      },
+      {
+        "role": "button",
+        "name": "Other"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "We've got you covered."
+      },
+      {
+        "role": "heading",
+        "name": "If you need a PSD letter, schedule a phone consultation with a licensed mental health professional in your state."
+      },
+      {
+        "role": "heading",
+        "name": "If you need PSD training, receive immediate access to our training program from a Certified Professional Dog Trainer."
+      },
+      {
+        "role": "heading",
+        "name": "If our PSD solution isn't right for you, we will refund 100% of your payment."
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      }
+    ],
+    "endWaitMs": 14153,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

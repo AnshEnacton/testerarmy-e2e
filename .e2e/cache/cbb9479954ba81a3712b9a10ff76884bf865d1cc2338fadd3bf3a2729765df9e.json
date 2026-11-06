@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.448Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Within 2-3 Days\"",
+        "target": {
+          "role": "button",
+          "name": "Within 2-3 Days"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "bd7e5042fbb9661a8838a8cb084293f399b1ea456cd911e59e2fe9c4d909b889",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose Within 2-3 Days on “How fast do you need your ESA Letter?”. The page moved to /esa/onboarding?step=esa_age_confirmation and asks “Are you 18 or older?” with Yes and No. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_turnaround",
+    "endPath": "/esa/onboarding?step=esa_age_confirmation",
+    "endAnchors": [
+      {
+        "text": "Are you 18 or older?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "How fast do you need your ESA Letter?"
+      }
+    ],
+    "endWaitMs": 23127,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

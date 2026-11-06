@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:12:27.208Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"04/12/1990\" into textbox \"MM/DD/YYYY\"",
+        "target": {
+          "role": "textbox",
+          "name": "MM/DD/YYYY",
+          "placeholder": "MM/DD/YYYY"
+        },
+        "value": "04/12/1990"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"One\"",
+        "target": {
+          "role": "button",
+          "name": "One"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Dog Dog\"",
+        "target": {
+          "role": "button",
+          "name": "Dog Dog"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Bella\" into textbox \"e.g. Bella\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Bella",
+          "placeholder": "e.g. Bella"
+        },
+        "value": "Bella"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Golden Retriever\" into textbox \"e.g. Golden Retriever\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Golden Retriever",
+          "placeholder": "e.g. Golden Retriever"
+        },
+        "value": "Golden Retriever"
+      },
+      {
+        "name": "type",
+        "summary": "type \"3\" into spinbutton \"e.g. 3\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "e.g. 3",
+          "placeholder": "e.g. 3"
+        },
+        "value": "3"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Bella helps me stay calm and gives me a…\" into textbox \"e.g. Bella helps me stay calm and gives…\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Bella helps me stay calm and gives me a reason to get outside every day",
+          "placeholder": "e.g. Bella helps me stay calm and gives me a reason to get outside every day"
+        },
+        "value": "Bella helps me stay calm and gives me a reason to get outside every day"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Male\"",
+        "target": {
+          "role": "button",
+          "name": "Male"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Anxiety\"",
+        "target": {
+          "role": "button",
+          "name": "Anxiety"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Esa\" into textbox \"First Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "First Name",
+          "placeholder": "Enter your first name"
+        },
+        "value": "Esa"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Regression\" into textbox \"Last Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "Last Name",
+          "placeholder": "Enter your last name"
+        },
+        "value": "Regression"
+      },
+      {
+        "name": "type",
+        "summary": "type \"4155550199\" into textbox \"Phone Number\"",
+        "target": {
+          "role": "textbox",
+          "name": "Phone Number",
+          "placeholder": "(555) 123-4567"
+        },
+        "value": "4155550199"
+      },
+      {
+        "name": "type",
+        "summary": "type \"avdesai+esa-regression-2026-11-03-0710@…\" into textbox \"Email\"",
+        "target": {
+          "role": "textbox",
+          "name": "Email",
+          "placeholder": "Enter your email"
+        },
+        "value": "{{param:/email}}"
+      },
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to the WellnessWag Service Term…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to the WellnessWag Service Terms and Informed Consent for Teletherapy, and confirm I'm at least 18."
+        },
+        "checked": true
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" (1 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"ESA Letter + 24 Hour Delivery Included …\"",
+        "target": {
+          "role": "button",
+          "name": "ESA Letter + 24 Hour Delivery Included Most popular $129 $159 $30 off Included with Your ESA Letter: Legally enforced for rentals, vacation homes, and college dorms. Compliant with Fair Housing Act for housing. Evaluated by a licensed Medical Provider in y"
+        }
+      },
+      {
+        "name": "scrollTo",
+        "summary": "scroll button \"Pay $129.00\" into view",
+        "target": {
+          "role": "button",
+          "name": "Pay $129.00"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "4381a22838b85f3d63c16fd910bf4610911c6c9a8808354f168ac98df4be9131",
+      "paramsDigest": "121f62ee2ebb0493a79507db9f7b80c843eea27ad28a31aa099696e2c9c05ff3",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Continued the ESA assessment, entered patient details (Esa Regression, the given email and phone), checked the required agreement, and left SMS consent unchecked. Standard ESA letter is selected, Subscribe & Save remains selected, and the Stripe checkout shows Pay $129.00. No card was entered and p…",
+    "startPath": "/esa/onboarding?step=esa_date_of_birth",
+    "endPath": "/esa-letter-checkout/checkout-with-2-pets",
+    "endAnchors": [
+      {
+        "text": "Intake Form"
+      },
+      {
+        "text": "ESA Letter Type"
+      },
+      {
+        "text": "Complete Payment"
+      },
+      {
+        "text": "Confirmation"
+      },
+      {
+        "text": "Included with Your ESA Letter:"
+      },
+      {
+        "text": "Legally enforced for rentals, vacation homes, and college dorms."
+      },
+      {
+        "text": "Compliant with Fair Housing Act for housing."
+      },
+      {
+        "text": "Evaluated by a licensed Medical Provider in your state."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Assessment"
+      },
+      {
+        "role": "button",
+        "name": "Menu"
+      },
+      {
+        "text": "Are you 18 or older?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "Date of Birth"
+      },
+      {
+        "role": "textbox",
+        "name": "MM/DD/YYYY",
+        "placeholder": "MM/DD/YYYY"
+      }
+    ],
+    "endWaitMs": 16051,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

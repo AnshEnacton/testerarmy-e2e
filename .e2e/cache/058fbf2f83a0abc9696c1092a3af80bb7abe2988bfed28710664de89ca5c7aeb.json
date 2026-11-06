@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T09:20:42.313Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-placard.e2e.ts::new%20patient%20reaches%20ParkingMD%20placard%20checkout",
+      "targetId": "web",
+      "instructionDigest": "d1180b75d0f9726d51ac35e7ec5df44a3cdd3e514e90871d2005673616a4c7d0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Pressed Continue on the comparison screen. The portal left /placard/why and opened /placard/register, showing “33,000+ Patients Recommend Us For Parking Permits Nationwide.” Did not answer a later question or click Pay.",
+    "startPath": "https://patient.parkingmd.com/placard/why",
+    "endPath": "https://patient.parkingmd.com/placard/register",
+    "endAnchors": [
+      {
+        "text": "Register"
+      },
+      {
+        "text": "33,000+ Patients Recommend Us"
+      },
+      {
+        "text": "For Parking Permits Nationwide"
+      },
+      {
+        "role": "heading",
+        "name": "Your Name"
+      },
+      {
+        "role": "heading",
+        "name": "Great! You're halfway there"
+      },
+      {
+        "role": "heading",
+        "name": "Why we need your legal name:"
+      },
+      {
+        "text": "Must match your driver's license or state ID"
+      },
+      {
+        "text": "Required for official DMV documentation"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Eligibility"
+      },
+      {
+        "text": "You're Likely Eligible!"
+      },
+      {
+        "text": "Let's Get Your Permit Fast"
+      },
+      {
+        "role": "heading",
+        "name": "Patient Name"
+      },
+      {
+        "role": "heading",
+        "name": "Why do people choose ParkingMD?"
+      },
+      {
+        "role": "heading",
+        "name": "ParkingMD Today"
+      },
+      {
+        "text": "Fastest & Cheapest"
+      },
+      {
+        "role": "heading",
+        "name": "Traditional Doctor Route"
+      }
+    ],
+    "endWaitMs": 17404,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

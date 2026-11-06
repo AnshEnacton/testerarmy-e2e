@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.637Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Never\"",
+        "target": {
+          "role": "button",
+          "name": "Never"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "421727b00009ac5a0e04e9c4870f15fea882c2be8e51f75938fb94526a29125a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose Never on “Over the past two (2) weeks, how often have you felt paranoid or fearful you are in danger?” The page advanced to /psd/onboarding?step=psd_suicide_thoughts (“Have you had recent thoughts of suicide?”). Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_paranoid",
+    "endPath": "/psd/onboarding?step=psd_suicide_thoughts",
+    "endAnchors": [
+      {
+        "text": "Have you had recent thoughts of suicide?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Over the past two (2) weeks, how often have you felt paranoid or fearful you are in danger?"
+      },
+      {
+        "text": "All the time"
+      },
+      {
+        "text": "Sometimes"
+      },
+      {
+        "text": "Never"
+      },
+      {
+        "role": "button",
+        "name": "All the time"
+      },
+      {
+        "role": "button",
+        "name": "Sometimes"
+      },
+      {
+        "role": "button",
+        "name": "Never"
+      }
+    ],
+    "endWaitMs": 17461,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

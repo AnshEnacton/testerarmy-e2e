@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T09:20:42.290Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-placard.e2e.ts::new%20patient%20reaches%20ParkingMD%20placard%20checkout",
+      "targetId": "web",
+      "instructionDigest": "55922a6fb5014bc29beac5d554671b0a73dfd890d07581f33b13737f08d4d719",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "California was already selected and no cookie notice was open. Pressed Continue; the portal advanced to /placard/onboarding and shows “Do you have difficulty walking 200 feet without stopping to rest?” with Yes and No. Did not answer it.",
+    "startPath": "https://patient.parkingmd.com/placard/choose-state?state=ca",
+    "endPath": "https://patient.parkingmd.com/placard/onboarding",
+    "endAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Eligibility"
+      },
+      {
+        "text": "Do you have difficulty walking 200 feet without stopping to rest?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Back"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Location"
+      },
+      {
+        "role": "heading",
+        "name": "What state do you live in?"
+      },
+      {
+        "role": "combobox",
+        "name": "Select State",
+        "placeholder": "Select State",
+        "value": "California"
+      },
+      {
+        "role": "link",
+        "name": "Log in"
+      },
+      {
+        "text": "Already have an account? Log in"
+      }
+    ],
+    "endWaitMs": 18277,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

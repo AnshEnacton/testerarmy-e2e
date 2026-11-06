@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.548Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" in \"Need Wellness Wag help? Ask Sophie.\"",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "within": "Need Wellness Wag help? Ask Sophie."
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap link \"PSD letter\"",
+        "target": {
+          "role": "link",
+          "name": "PSD letter"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "b67e378506130a0a817caa1974a9bfdfae3f3fcd617b180fcd7023cc58c27e61",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Closed the Sophie dialog, then opened PSD letter from the PSD letter shortcut. The page is now /services/psd with the Psychiatric Service Dog (PSD) Letter heading and a Get started link. ESA and other services were not opened.",
+    "startPath": "/services",
+    "endPath": "/services/psd",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Psychiatric Service Dog (PSD) Letter"
+      },
+      {
+        "text": "Get your PSD letter approved by a licensed mental health professional. Fly with your dog in the cabin for free and live anywhere without pet fees."
+      },
+      {
+        "text": "Qualify"
+      },
+      {
+        "text": "Payment"
+      },
+      {
+        "text": "Intake"
+      },
+      {
+        "text": "Review"
+      },
+      {
+        "text": "Done"
+      },
+      {
+        "text": "$199"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "WellnessWag helps you navigate our services, benefits, and programs in one patient-friendly portal — spend less time on paperwork, more time on what matters."
+      },
+      {
+        "role": "searchbox",
+        "name": "Search services",
+        "placeholder": "Search services"
+      },
+      {
+        "text": "Lemonade"
+      },
+      {
+        "role": "heading",
+        "name": "Pet Insurance"
+      },
+      {
+        "text": "Keep your furry family members protected with pet insurance plans designed to cover the care they deserve."
+      },
+      {
+        "role": "link",
+        "name": "Learn more"
+      },
+      {
+        "role": "heading",
+        "name": "Renters Insurance"
+      },
+      {
+        "text": "Protect your belongings with renters insurance - simple, affordable coverage for where you live."
+      }
+    ],
+    "endWaitMs": 22111,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T09:20:42.276Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Got it\" in \"We and our partners use tracking techno…\"",
+        "target": {
+          "role": "button",
+          "name": "Got it",
+          "within": "We and our partners use tracking technologies to collect data about you and you…"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" in \"Need ParkingMD help? Ask Sarah.\"",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "within": "Need ParkingMD help? Ask Sarah."
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"California\" into combobox \"Type your state\" (1 of 2)",
+        "target": {
+          "role": "combobox",
+          "name": "Type your state",
+          "placeholder": "Type your state",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        },
+        "value": "California"
+      },
+      {
+        "name": "press",
+        "summary": "press \"Enter\" on combobox \"Type your state\" (1 of 2)",
+        "target": {
+          "role": "combobox",
+          "name": "Type your state",
+          "placeholder": "Type your state",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        },
+        "key": "Enter"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-placard.e2e.ts::new%20patient%20reaches%20ParkingMD%20placard%20checkout",
+      "targetId": "web",
+      "instructionDigest": "7977565893b3b0775a4d46f088b6fc88d6048c3041b5f379cdd6dc6737519c83",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Dismissed the cookie notice and Sarah chat, typed California in the first Type your state field, and pressed Enter. The site opened the California page at /california/handicap-placard (“Get Your California Handicap Parking Permit Online Today”).",
+    "startPath": "https://parkingmd.com/",
+    "endPath": "https://parkingmd.com/california/handicap-placard",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "DMV won't issue placard without this doctor-signed form"
+      },
+      {
+        "role": "button",
+        "name": "Accessibility widget — Press Alt+A to open/close"
+      },
+      {
+        "text": "DMV won't issue placard without this doctor-signed form"
+      },
+      {
+        "text": "FAST, EASY, AND AFFORDABLE"
+      },
+      {
+        "role": "heading",
+        "name": "Get Your California Handicap Parking Permit Online Today"
+      },
+      {
+        "text": "We provide the physician-signed DMV forms required for your handicap placard."
+      },
+      {
+        "role": "image",
+        "name": "Checkmark icon"
+      },
+      {
+        "text": "100% Online – Skip the DMV Lines"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Welcome to ParkingMD"
+      },
+      {
+        "role": "heading",
+        "name": "Get Your Handicap Parking Permit Evaluation Online"
+      },
+      {
+        "text": "Connect with licensed physicians online to complete your DMV disability parking permit evaluation, without ever leaving home."
+      },
+      {
+        "text": "Type your state"
+      },
+      {
+        "role": "combobox",
+        "name": "Type your state",
+        "placeholder": "Type your state"
+      },
+      {
+        "text": "3 Simple Steps to Get Your"
+      },
+      {
+        "text": "Handicap Parking Permit"
+      },
+      {
+        "text": "Skip the wait at the doctor's office. Schedule your DMV disability parking permit evaluation from home."
+      }
+    ],
+    "endWaitMs": 20716,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

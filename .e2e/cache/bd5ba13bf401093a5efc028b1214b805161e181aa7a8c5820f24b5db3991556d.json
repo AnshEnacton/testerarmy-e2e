@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T10:07:09.651Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"{{param:/firstName}}\" into textbox \"First Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "First Name",
+          "placeholder": "Enter your first name"
+        },
+        "value": "{{param:/firstName}}"
+      },
+      {
+        "name": "type",
+        "summary": "type \"{{param:/lastName}}\" into textbox \"Last Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "Last Name",
+          "placeholder": "Enter your last name"
+        },
+        "value": "{{param:/lastName}}"
+      },
+      {
+        "name": "type",
+        "summary": "type \"7372103830\" into textbox \"Phone Number\"",
+        "target": {
+          "role": "textbox",
+          "name": "Phone Number",
+          "placeholder": "(555) 123-4567"
+        },
+        "value": "7372103830"
+      },
+      {
+        "name": "type",
+        "summary": "type \"avdesai+psd-regression-2026-11-03-1005@…\" into textbox \"Email\"",
+        "target": {
+          "role": "textbox",
+          "name": "Email",
+          "placeholder": "Enter your email"
+        },
+        "value": "{{param:/email}}"
+      },
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to the WellnessWag Service Term…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to the WellnessWag Service Terms and Informed Consent for Teletherapy, and confirm I'm at least 18."
+        },
+        "checked": true
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "f565ef982eff7e8328dfd984cf95fac37d2e2049043136c01d75c8071781b321",
+      "paramsDigest": "58f2c1745a9eb1f17a99836e4abe1d9dd0af1b5a08b32ab9aa2a00d09ece2b22",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Registration was already submitted and the letter type page is open at /psd-letter-checkout/add-to-cart (“Select the right option for your personal PSD Letter”). A $20-off popup is showing; left it open and did not choose a letter. Note: the replay entered email avdesai+psd-regression-2026-11-03-09…",
+    "startPath": "/psd/register",
+    "endPath": "/psd-letter-checkout/add-to-cart",
+    "endAnchors": [
+      {
+        "text": "Intake Form"
+      },
+      {
+        "text": "PSD Letter Type"
+      },
+      {
+        "text": "Complete Payment"
+      },
+      {
+        "text": "Confirmation"
+      },
+      {
+        "text": "Select the right option for your personal PSD Letter. If you need additional paperwork, it can be added later."
+      },
+      {
+        "text": "Most popular"
+      },
+      {
+        "text": "$149"
+      },
+      {
+        "text": "$179"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Register"
+      },
+      {
+        "role": "button",
+        "name": "Menu"
+      },
+      {
+        "role": "heading",
+        "name": "You’re one step away!"
+      },
+      {
+        "text": "Enter your details to see if you qualify for a PSD letter"
+      },
+      {
+        "text": "First Name"
+      },
+      {
+        "role": "textbox",
+        "name": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      {
+        "text": "Last Name"
+      }
+    ],
+    "endWaitMs": 10194,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

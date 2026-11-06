@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:08:49.125Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Psd\" into textbox \"First Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "First Name",
+          "placeholder": "Enter your first name"
+        },
+        "value": "Psd"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Regression\" into textbox \"Last Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "Last Name",
+          "placeholder": "Enter your last name"
+        },
+        "value": "Regression"
+      },
+      {
+        "name": "type",
+        "summary": "type \"7372103830\" into textbox \"Phone Number\"",
+        "target": {
+          "role": "textbox",
+          "name": "Phone Number",
+          "placeholder": "(555) 123-4567"
+        },
+        "value": "7372103830"
+      },
+      {
+        "name": "type",
+        "summary": "type \"avdesai+psd-regression-2026-11-03-0706@…\" into textbox \"Email\"",
+        "target": {
+          "role": "textbox",
+          "name": "Email",
+          "placeholder": "Enter your email"
+        },
+        "value": "{{param:/email}}"
+      },
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to the WellnessWag Service Term…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to the WellnessWag Service Terms and Informed Consent for Teletherapy, and confirm I'm at least 18."
+        },
+        "checked": true
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "scroll",
+        "summary": "scroll down",
+        "direction": "down"
+      },
+      {
+        "name": "tap",
+        "summary": "tap node \"Select Option\" (1 of 2)",
+        "target": {
+          "text": "Select Option",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "scrollTo",
+        "summary": "scroll button \"Pay $149.00\" into view",
+        "target": {
+          "role": "button",
+          "name": "Pay $149.00"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "a817a097d725a08744642d011ba2a29013b8c9d131bd2aa48b80df842e8bb2c0",
+      "paramsDigest": "ed0b4aa68350fa25f291804a552ea232898f35ecb989a149947bb43eb08c6fe4",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Reached Stripe checkout for PSD Letter Up to 2 Pets + 24 Hours Delivery Included. Subscribe & Save is selected, email is avdesai+psd-regression-2026-11-03-0706@enacton.email, and Pay $149.00 is visible. No card was entered and payment was not submitted.",
+    "startPath": "/psd/register",
+    "endPath": "/psd-letter-checkout/checkout-with-2-pets",
+    "endAnchors": [
+      {
+        "text": "Intake Form"
+      },
+      {
+        "text": "PSD Letter Type"
+      },
+      {
+        "text": "Complete Payment"
+      },
+      {
+        "text": "Confirmation"
+      },
+      {
+        "text": "Included with Your PSD Letter:"
+      },
+      {
+        "text": "Legally enforced for rentals, vacation homes, and college dorms."
+      },
+      {
+        "text": "Compliant with Fair Housing Act for housing."
+      },
+      {
+        "text": "Evaluated by a licensed Medical Provider in your state."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Register"
+      },
+      {
+        "role": "button",
+        "name": "Menu"
+      },
+      {
+        "role": "heading",
+        "name": "You’re one step away!"
+      },
+      {
+        "text": "Enter your details to see if you qualify for a PSD letter"
+      },
+      {
+        "text": "First Name"
+      },
+      {
+        "role": "textbox",
+        "name": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      {
+        "text": "Last Name"
+      }
+    ],
+    "endWaitMs": 10226,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

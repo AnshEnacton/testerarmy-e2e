@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.489Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "4f4bdef938990d4b7036679a242e20a73400b9f98cee56cdc769504911c94f21",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 1,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose Sometimes on “Do you often worry something bad is going to happen to you or someone close to you?”. The page moved to /esa/onboarding?step=esa_sleep and asks about trouble sleeping. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_worry_bad",
+    "endPath": "/esa/onboarding?step=esa_sleep",
+    "endAnchors": [
+      {
+        "text": "Over the past two (2) weeks, have you had trouble sleeping?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Do you often worry something bad is going to happen to you or someone close to you?"
+      },
+      {
+        "text": "All the time"
+      },
+      {
+        "text": "Sometimes"
+      },
+      {
+        "text": "Never"
+      },
+      {
+        "role": "button",
+        "name": "All the time"
+      },
+      {
+        "role": "button",
+        "name": "Sometimes"
+      },
+      {
+        "role": "button",
+        "name": "Never"
+      }
+    ],
+    "endWaitMs": 21866,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

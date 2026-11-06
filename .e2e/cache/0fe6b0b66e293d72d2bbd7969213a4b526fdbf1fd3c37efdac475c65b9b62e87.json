@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.582Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "f3ee4a292c298baa2d19ed7280e362fb76f132c52d547619606fe8c16b822920",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Selected Yes on “Are you looking for a PSD letter?” and continued. The page is now /psd/onboarding?step=psd_walkthrough with “We've got you covered.” Did not continue further or go back.",
+    "startPath": "/psd/onboarding",
+    "endPath": "/psd/onboarding?step=psd_walkthrough",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "We've got you covered."
+      },
+      {
+        "role": "heading",
+        "name": "If you need a PSD letter, schedule a phone consultation with a licensed mental health professional in your state."
+      },
+      {
+        "role": "heading",
+        "name": "If you need PSD training, receive immediate access to our training program from a Certified Professional Dog Trainer."
+      },
+      {
+        "role": "heading",
+        "name": "If our PSD solution isn't right for you, we will refund 100% of your payment."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Are you looking for a PSD letter?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "image",
+        "name": "A service dog"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "endWaitMs": 14516,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

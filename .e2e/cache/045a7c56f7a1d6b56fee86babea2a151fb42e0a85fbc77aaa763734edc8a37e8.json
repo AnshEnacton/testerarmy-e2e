@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.554Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Get started\"",
+        "target": {
+          "role": "link",
+          "name": "Get started"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "31169de8b0d2fedff34fe0058d68d16ac8701ffd8164792fddd6c28d0bcdde6a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Sophie was not open. Clicked the primary Get started link and landed on /psd/welcome with “Are you a new or existing patient?” and New Patient / Existing Patient choices. Did not answer that question.",
+    "startPath": "/services/psd",
+    "endPath": "/psd/welcome",
+    "endAnchors": [
+      {
+        "text": "Welcome"
+      },
+      {
+        "text": "Get Your"
+      },
+      {
+        "text": "Psychiatric Service Dog Letter"
+      },
+      {
+        "role": "image",
+        "name": "state"
+      },
+      {
+        "text": "YOUR STATE"
+      },
+      {
+        "text": "PATIENT NAME"
+      },
+      {
+        "role": "image",
+        "name": "Medical Professional Signature"
+      },
+      {
+        "role": "image",
+        "name": "Certified"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "name": "Home"
+      },
+      {
+        "name": "Lemonade",
+        "text": "Lemon…"
+      },
+      {
+        "name": "Pet Insurance"
+      },
+      {
+        "name": "ESA letter"
+      },
+      {
+        "name": "PSD letter"
+      },
+      {
+        "name": "Parking Permit"
+      },
+      {
+        "name": "Doctor's Note"
+      },
+      {
+        "name": "Tinted Window"
+      }
+    ],
+    "endWaitMs": 13547,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

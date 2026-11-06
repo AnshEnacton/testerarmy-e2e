@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-02T08:14:03.584Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Open\"",
+        "target": {
+          "role": "tab",
+          "name": "Open"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "lab/tests/agent-board.e2e.ts::agent%20on%20the%20board::reads%20the%20open%20tasks%20from%20the%20list",
+      "targetId": "harbor",
+      "instructionDigest": "ad9e38caf2500bdaed70eb2a1a232e2331c32658053d505b6ab88a5a8c572191",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Tapped the Open tab. It is selected, the finished task “Print the roster” is no longer listed, and only the open task “Walk the lobby” remains. Status still reads “1 open”.",
+    "startPath": "/board",
+    "endPath": "/board",
+    "endAnchors": [
+      {
+        "role": "tab",
+        "name": "All"
+      },
+      {
+        "role": "tab",
+        "name": "Open",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "tab",
+        "name": "All",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Open"
+      },
+      {
+        "role": "checkbox",
+        "name": "Print the roster",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Print the roster"
+      },
+      {
+        "role": "button",
+        "name": "Delete Print the roster",
+        "text": "Delete"
+      },
+      {
+        "role": "listitem",
+        "name": "Print the roster Delete Print the roster"
+      }
+    ],
+    "endWaitMs": 14157,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f9f49ed79c2662c7f6e0522da33af26cd0588919fce8b674530ba7c83e5d217c",
+      "agentContextDigest": "a010b0d69a8af9f6cebfb2ada0fd8f907805de3a6b55d928f52caf97220586dd"
+    }
+  }
+}

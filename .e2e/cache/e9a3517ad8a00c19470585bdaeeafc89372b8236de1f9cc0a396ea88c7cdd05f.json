@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.469Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"One\"",
+        "target": {
+          "role": "button",
+          "name": "One"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "a5049e482d371141017d0eb41f1939ee6044d6d9df74db4fbed0906d929a3ab7",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose One on “How many pets do you have?”. The page moved to /esa/onboarding?step=esa_pet_details and asks for Pet 1 details. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_pet_count",
+    "endPath": "/esa/onboarding?step=esa_pet_details",
+    "endAnchors": [
+      {
+        "text": "Please share your pet's details."
+      },
+      {
+        "text": "If you have more than one pet, list each pet's type, name, breed, age, gender, and how they help you day to day."
+      },
+      {
+        "text": "Pet 1"
+      },
+      {
+        "role": "button",
+        "name": "Collapse Pet 1"
+      },
+      {
+        "text": "What type of pet is this? *"
+      },
+      {
+        "role": "image",
+        "name": "Dog"
+      },
+      {
+        "text": "Dog"
+      },
+      {
+        "role": "image",
+        "name": "Cat"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "How many pets do you have?"
+      },
+      {
+        "text": "One"
+      },
+      {
+        "text": "Two"
+      },
+      {
+        "text": "Three"
+      },
+      {
+        "text": "Four or more"
+      },
+      {
+        "role": "button",
+        "name": "One"
+      },
+      {
+        "role": "button",
+        "name": "Two"
+      },
+      {
+        "role": "button",
+        "name": "Three"
+      }
+    ],
+    "endWaitMs": 25775,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

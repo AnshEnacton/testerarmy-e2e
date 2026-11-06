@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.635Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "3f64d163057bf7ce0cafd10d1a2be42842818e738bdd7d2ccc1118d257d48c19",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Selected No on “Have you had any instances of hearing things other people couldn't hear or seeing things other people couldn't see?” The page advanced to /psd/onboarding?step=psd_paranoid (“Over the past two (2) weeks, how often have you felt paranoid or fearful you are in danger?”). Did not answer…",
+    "startPath": "/psd/onboarding?step=psd_hallucinations",
+    "endPath": "/psd/onboarding?step=psd_paranoid",
+    "endAnchors": [
+      {
+        "text": "Over the past two (2) weeks, how often have you felt paranoid or fearful you are in danger?"
+      },
+      {
+        "text": "All the time"
+      },
+      {
+        "text": "Sometimes"
+      },
+      {
+        "text": "Never"
+      },
+      {
+        "role": "button",
+        "name": "All the time"
+      },
+      {
+        "role": "button",
+        "name": "Sometimes"
+      },
+      {
+        "role": "button",
+        "name": "Never"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Have you had any instances of hearing things other people couldn't hear or seeing things other people couldn't see?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "Let me specify"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      },
+      {
+        "role": "button",
+        "name": "Let me specify"
+      }
+    ],
+    "endWaitMs": 27037,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

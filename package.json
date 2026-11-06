@@ -1,0 +1,23 @@
+{
+  "name": "testerarmy-e2e",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@ai-sdk/xai": "^5.0.35",
+    "@e2e-dev/web": "^0.15.4",
+    "@types/node": "^26.6.5",
+    "ai": "^7.0.155",
+    "e2e": "^0.22.0"
+  },
+  "scripts": {
+    "lab": "node lab/server.mjs",
+    "test:e2e": "e2e run --exclude-tag checkout --exclude-tag parkingmd",
+    "test:portal": "e2e run --tag checkout --workers 1",
+    "test:parkingmd": "e2e run tests/parkingmd-placard.e2e.ts",
+    "test:parkingmd:headed": "e2e run tests/parkingmd-placard.e2e.ts --headed",
+    "test:parkingmd:entries": "e2e run tests/parkingmd-entries.e2e.ts --workers 4",
+    "test:lab": "e2e run --config e2e.lab.config.ts --exclude-tag agent",
+    "test:lab:headed": "e2e run --config e2e.lab.config.ts --exclude-tag agent --headed",
+    "test:lab:agent": "e2e run --config e2e.lab.config.ts --tag agent"
+  }
+}

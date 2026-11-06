@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.456Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"04/12/1990\" into textbox \"MM/DD/YYYY\"",
+        "target": {
+          "role": "textbox",
+          "name": "MM/DD/YYYY",
+          "placeholder": "MM/DD/YYYY"
+        },
+        "value": "04/12/1990"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "0a3bb75d0534d3bc0bcb74ce8ff94ba013631dd2ffcaba647c8c68a4e64f93b2",
+      "paramsDigest": "f851ea9aae7887dc7fc33f312baa92012182fd526a294a0dfdd457f3dd6e3cdf",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Entered 04/12/1990 as the date of birth and pressed Continue. The page moved to /esa/onboarding?step=esa_additional_paperwork and asks “Do you need any additional paperwork other than the standard ESA Letter?” with Yes, No, and I'm not sure. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_date_of_birth",
+    "endPath": "/esa/onboarding?step=esa_additional_paperwork",
+    "endAnchors": [
+      {
+        "text": "Do you need any additional paperwork other than the standard ESA Letter?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "I'm not sure"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      },
+      {
+        "role": "button",
+        "name": "I'm not sure"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Date of Birth"
+      },
+      {
+        "role": "textbox",
+        "name": "MM/DD/YYYY",
+        "placeholder": "MM/DD/YYYY"
+      },
+      {
+        "role": "button",
+        "name": "Date of Birth"
+      },
+      {
+        "text": "Your full date of birth (MM/DD/YYYY)"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      }
+    ],
+    "endWaitMs": 13623,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

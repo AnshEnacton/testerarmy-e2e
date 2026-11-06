@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.625Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "8bc669248de94bf78e493d07937be6fa5fc75ce358e0ffd4c0310a6dbb11f2aa",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose Sometimes on “Over the past two (2) weeks, how often have you felt worried, anxious, or on edge?” The page advanced to /psd/onboarding?step=psd_anxiety_panicked (“During this time have you felt afraid or panicked?”). Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_anxiety_worried",
+    "endPath": "/psd/onboarding?step=psd_anxiety_panicked",
+    "endAnchors": [
+      {
+        "text": "During this time have you felt afraid or panicked?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Over the past two (2) weeks, how often have you felt worried, anxious, or on edge?"
+      },
+      {
+        "text": "All the time"
+      },
+      {
+        "text": "Sometimes"
+      },
+      {
+        "text": "Never"
+      },
+      {
+        "role": "button",
+        "name": "All the time"
+      },
+      {
+        "role": "button",
+        "name": "Sometimes"
+      },
+      {
+        "role": "button",
+        "name": "Never"
+      }
+    ],
+    "endWaitMs": 16013,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.644Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Psd\" into textbox \"First Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "First Name",
+          "placeholder": "Enter your first name"
+        },
+        "value": "Psd"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Regression\" into textbox \"Last Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "Last Name",
+          "placeholder": "Enter your last name"
+        },
+        "value": "Regression"
+      },
+      {
+        "name": "type",
+        "summary": "type \"7372103830\" into textbox \"Phone Number\"",
+        "target": {
+          "role": "textbox",
+          "name": "Phone Number",
+          "placeholder": "(555) 123-4567"
+        },
+        "value": "7372103830"
+      },
+      {
+        "name": "type",
+        "summary": "type \"avdesai+psd-regression-2026-11-03-0734@…\" into textbox \"Email\"",
+        "target": {
+          "role": "textbox",
+          "name": "Email",
+          "placeholder": "Enter your email"
+        },
+        "value": "{{param:/email}}"
+      },
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to the WellnessWag Service Term…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to the WellnessWag Service Terms and Informed Consent for Teletherapy, and confirm I'm at least 18."
+        },
+        "checked": true
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "fdd6eaf8b0bc38d3d9acae397111e4ffeef33254cb819b3b9b758ccb6ea09d5a",
+      "paramsDigest": "ed0b4aa68350fa25f291804a552ea232898f35ecb989a149947bb43eb08c6fe4",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Entered Psd, Regression, phone (737) 210-3830, and the given email; checked the teletherapy/18+ agreement and left SMS consent unchecked. Continue advanced to /psd-letter-checkout/add-to-cart (PSD Letter Type). Did not choose a letter.",
+    "startPath": "/psd/register",
+    "endPath": "/psd-letter-checkout/add-to-cart",
+    "endAnchors": [
+      {
+        "text": "Intake Form"
+      },
+      {
+        "text": "PSD Letter Type"
+      },
+      {
+        "text": "Complete Payment"
+      },
+      {
+        "text": "Confirmation"
+      },
+      {
+        "text": "Select the right option for your personal PSD Letter. If you need additional paperwork, it can be added later."
+      },
+      {
+        "text": "Most popular"
+      },
+      {
+        "text": "$149"
+      },
+      {
+        "text": "$179"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Register"
+      },
+      {
+        "role": "button",
+        "name": "Menu"
+      },
+      {
+        "role": "heading",
+        "name": "You’re one step away!"
+      },
+      {
+        "text": "Enter your details to see if you qualify for a PSD letter"
+      },
+      {
+        "text": "First Name"
+      },
+      {
+        "role": "textbox",
+        "name": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      {
+        "text": "Last Name"
+      }
+    ],
+    "endWaitMs": 31605,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

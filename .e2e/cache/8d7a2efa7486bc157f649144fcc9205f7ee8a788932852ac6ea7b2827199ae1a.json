@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.611Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "4fd3077d8f548b56915228e488c75382ea280f6832fd73d2d727db82da1bf8cd",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Selected No on “Do you need any additional forms filled out in addition to your PSD Letter?” The page advanced to /psd/onboarding?step=psd_pet_details with Dog Information. Did not fill that in or go back.",
+    "startPath": "/psd/onboarding?step=psd_additional_paperwork",
+    "endPath": "/psd/onboarding?step=psd_pet_details",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Dog Information"
+      },
+      {
+        "role": "image",
+        "name": "Dog"
+      },
+      {
+        "text": "Your Dog"
+      },
+      {
+        "text": "Tell us about your service dog"
+      },
+      {
+        "text": "Dog name *"
+      },
+      {
+        "role": "textbox",
+        "name": "e.g. Max",
+        "placeholder": "e.g. Max"
+      },
+      {
+        "text": "Dog breed *"
+      },
+      {
+        "role": "textbox",
+        "name": "e.g. Golden Retriever",
+        "placeholder": "e.g. Golden Retriever"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Do you need any additional forms filled out in addition to your PSD Letter?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "I'm not sure"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      },
+      {
+        "role": "button",
+        "name": "I'm not sure"
+      }
+    ],
+    "endWaitMs": 27746,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

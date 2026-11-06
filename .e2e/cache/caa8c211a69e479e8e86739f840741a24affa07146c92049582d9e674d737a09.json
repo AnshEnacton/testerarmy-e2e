@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:34:54.378Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Get started\"",
+        "target": {
+          "role": "link",
+          "name": "Get started"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" in \"Need Wellness Wag help? Ask Sophie.\"",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "within": "Need Wellness Wag help? Ask Sophie."
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "2a465bb8851c0f34b8e72ae8bd7998ab5685ef54713ba0aa039284f793e9aa3c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Closed the Sophie dialog, then the hero Get started link opened /esa/welcome. The page asks “Are you a new or existing patient?” with New Patient and Existing Patient options.",
+    "startPath": "/services/esa",
+    "endPath": "/esa/welcome",
+    "endAnchors": [
+      {
+        "text": "Welcome"
+      },
+      {
+        "text": "Get Your"
+      },
+      {
+        "text": "Emotional Support Animal Letter"
+      },
+      {
+        "role": "image",
+        "name": "state"
+      },
+      {
+        "text": "YOUR STATE"
+      },
+      {
+        "text": "PATIENT NAME"
+      },
+      {
+        "role": "image",
+        "name": "Medical Professional Signature"
+      },
+      {
+        "role": "image",
+        "name": "Certified"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "name": "Home"
+      },
+      {
+        "name": "Lemonade",
+        "text": "Lemon…"
+      },
+      {
+        "name": "Pet Insurance"
+      },
+      {
+        "name": "ESA letter"
+      },
+      {
+        "name": "PSD letter"
+      },
+      {
+        "name": "Parking Permit"
+      },
+      {
+        "name": "Doctor's Note"
+      },
+      {
+        "name": "Tinted Window"
+      }
+    ],
+    "endWaitMs": 13262,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

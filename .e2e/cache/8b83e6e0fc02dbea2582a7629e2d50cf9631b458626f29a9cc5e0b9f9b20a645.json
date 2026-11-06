@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.590Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Travel\"",
+        "target": {
+          "role": "button",
+          "name": "Travel"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "de101b61bd813f2ccbf3c625c300f9ff747237a2ded897577352ab69c60b0e40",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose Travel on “Why does your dog need PSD Training?” The page advanced to /psd/onboarding?step=psd_trained with “Has your dog already been PSD Trained?” Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_reason",
+    "endPath": "/psd/onboarding?step=psd_trained",
+    "endAnchors": [
+      {
+        "text": "Has your dog already been PSD Trained?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "I'm not sure"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      },
+      {
+        "role": "button",
+        "name": "I'm not sure"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Why does your dog need PSD Training?"
+      },
+      {
+        "text": "Travel"
+      },
+      {
+        "text": "Public Access"
+      },
+      {
+        "text": "Other"
+      },
+      {
+        "role": "button",
+        "name": "Travel"
+      },
+      {
+        "role": "button",
+        "name": "Public Access"
+      },
+      {
+        "role": "button",
+        "name": "Other"
+      }
+    ],
+    "endWaitMs": 26031,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:05:10.356Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"04/12/1990\" into textbox \"MM/DD/YYYY\"",
+        "target": {
+          "role": "textbox",
+          "name": "MM/DD/YYYY",
+          "placeholder": "MM/DD/YYYY"
+        },
+        "value": "04/12/1990"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Scout\" into textbox \"e.g. Max\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Max",
+          "placeholder": "e.g. Max"
+        },
+        "value": "Scout"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Labrador Retriever\" into textbox \"e.g. Golden Retriever\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Golden Retriever",
+          "placeholder": "e.g. Golden Retriever"
+        },
+        "value": "Labrador Retriever"
+      },
+      {
+        "name": "type",
+        "summary": "type \"4\" into spinbutton \"e.g. 3\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "e.g. 3",
+          "placeholder": "e.g. 3"
+        },
+        "value": "4"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Not yet trained\" into textbox \"e.g. Scout is trained to calm me during…\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Scout is trained to calm me during anxiety episodes",
+          "placeholder": "e.g. Scout is trained to calm me during anxiety episodes"
+        },
+        "value": "Not yet trained"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Female\"",
+        "target": {
+          "role": "button",
+          "name": "Female"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Just not sleeping well\"",
+        "target": {
+          "role": "button",
+          "name": "Just not sleeping well"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Often\"",
+        "target": {
+          "role": "button",
+          "name": "Often"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Never\"",
+        "target": {
+          "role": "button",
+          "name": "Never"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "2b1662324f3a92a9e60088958de82b7bacb92fe396267a41ab6e4b0226e2adfc",
+      "paramsDigest": "44d136c67432942fe34097db6ca856e7caed447dd40118fe7fe006b9de9acfe4",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Entered DOB 04/12/1990, declined extra paperwork, and saved dog Scout, Labrador Retriever, age 4, Female. Answered screening as specified (sad/enjoyment/panicked Yes; irritable/impulsive/hallucinations/self-harm No; sleep Just not sleeping well; anxious Sometimes; avoidance Often; paranoia Never). …",
+    "startPath": "/psd/onboarding?step=psd_date_of_birth",
+    "endPath": "/psd/register",
+    "endAnchors": [
+      {
+        "text": "Register"
+      },
+      {
+        "role": "heading",
+        "name": "You’re one step away!"
+      },
+      {
+        "text": "Enter your details to see if you qualify for a PSD letter"
+      },
+      {
+        "text": "First Name"
+      },
+      {
+        "role": "textbox",
+        "name": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      {
+        "text": "Last Name"
+      },
+      {
+        "role": "textbox",
+        "name": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      {
+        "text": "Phone Number"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Date of Birth"
+      },
+      {
+        "role": "textbox",
+        "name": "MM/DD/YYYY",
+        "placeholder": "MM/DD/YYYY"
+      },
+      {
+        "role": "button",
+        "name": "Date of Birth"
+      },
+      {
+        "text": "Your full date of birth (MM/DD/YYYY)"
+      },
+      {
+        "role": "image",
+        "name": "A service dog"
+      },
+      {
+        "role": "document",
+        "name": "PSD Letter | WellnessWag Patient Portal"
+      }
+    ],
+    "endWaitMs": 19718,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

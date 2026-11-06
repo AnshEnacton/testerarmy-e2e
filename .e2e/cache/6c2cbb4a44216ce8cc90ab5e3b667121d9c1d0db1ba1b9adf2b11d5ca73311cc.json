@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T06:48:29.546Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to the WellnessWag Service Term…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to the WellnessWag Service Terms and Informed Consent for Teletherapy. I also confirm that I am at least 18 years of age."
+        },
+        "checked": true
+      },
+      {
+        "name": "tapAt",
+        "summary": "tap the point (867, 63) on presentation \"Secure payment input frame\"",
+        "point": {
+          "x": 867,
+          "y": 63
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "within": {
+          "target": {
+            "role": "presentation",
+            "name": "Secure payment input frame"
+          },
+          "fx": 0.2317,
+          "fy": 0.4068
+        }
+      },
+      {
+        "name": "typeText",
+        "summary": "type \"4242424242424242\" into the focused field",
+        "value": "4242424242424242",
+        "replace": false
+      },
+      {
+        "name": "tapAt",
+        "summary": "tap the point (797, 160) on node \"By providing your card information, you…\"",
+        "point": {
+          "x": 797,
+          "y": 160
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "within": {
+          "target": {
+            "text": "By providing your card information, you allow WellnessWag to charge your card for future payments in accordance with their terms."
+          },
+          "fx": 0.0589,
+          "fy": 0.0344
+        }
+      },
+      {
+        "name": "tapAt",
+        "summary": "tap the point (1083, 160) on node \"By providing your card information, you…\"",
+        "point": {
+          "x": 1083,
+          "y": 160
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "within": {
+          "target": {
+            "text": "By providing your card information, you allow WellnessWag to charge your card for future payments in accordance with their terms."
+          },
+          "fx": 0.7438,
+          "fy": 0.0344
+        }
+      },
+      {
+        "name": "tapAt",
+        "summary": "tap the point (833, 142) on presentation \"Secure payment input frame\"",
+        "point": {
+          "x": 833,
+          "y": 142
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "within": {
+          "target": {
+            "role": "presentation",
+            "name": "Secure payment input frame"
+          },
+          "fx": 0.1518,
+          "fy": 0.9458
+        }
+      },
+      {
+        "name": "tool",
+        "summary": "tool type (run-time value)",
+        "derived": "pixels"
+      },
+      {
+        "name": "typeText",
+        "summary": "type \"123\" into the focused field",
+        "value": "123",
+        "replace": false
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Pay $129.00\"",
+        "target": {
+          "role": "button",
+          "name": "Pay $129.00"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "96abeae0f367b685ca5119baf9e503ad60daa6f35bef88e272432d52456d195a",
+      "paramsDigest": "ab33d0854b42d3eac5a5b9374846a5f0ef3b87b441300bfbe3cd9e01b93a74ee",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Paid $129.00 with Subscribe & Save left selected, the Service Terms checkbox checked, and card 4242…4242, expiry 12/34, CVC 123. No postal field was shown. The thank-you page shows the heading Congratulations.",
+    "startPath": "/esa-letter-checkout/checkout-with-2-pets",
+    "endPath": "/esa-letter-checkout/thank-you",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Congratulations!"
+      },
+      {
+        "text": "You're pre qualified"
+      },
+      {
+        "role": "image",
+        "name": "Pre qualified"
+      },
+      {
+        "role": "heading",
+        "name": "Whats Next?"
+      },
+      {
+        "text": "A Wellness Wag licensed Medical Provider is currently reviewing your pre-qualified application"
+      },
+      {
+        "role": "link",
+        "name": "Continue"
+      },
+      {
+        "role": "heading",
+        "name": "Customers Also Bought"
+      },
+      {
+        "role": "heading",
+        "name": "Renters Insurance"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Included with Your ESA Letter:"
+      },
+      {
+        "text": "Legally enforced for rentals, vacation homes, and college dorms."
+      },
+      {
+        "text": "Compliant with Fair Housing Act for housing."
+      },
+      {
+        "text": "Evaluated by a licensed Medical Provider in your state."
+      },
+      {
+        "role": "heading",
+        "name": "Hear what our happy pet parents say!"
+      },
+      {
+        "role": "iframe",
+        "name": "Pet parent testimonial 1"
+      },
+      {
+        "role": "button",
+        "name": "Previous video"
+      },
+      {
+        "role": "button",
+        "name": "Next video"
+      }
+    ],
+    "endWaitMs": 25923,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

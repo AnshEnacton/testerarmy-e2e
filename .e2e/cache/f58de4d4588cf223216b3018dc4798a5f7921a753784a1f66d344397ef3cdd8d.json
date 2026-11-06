@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:34:54.387Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap combobox \"Select State\"",
+        "target": {
+          "role": "combobox",
+          "name": "Select State",
+          "placeholder": "Select State"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap option \"California\"",
+        "target": {
+          "role": "option",
+          "name": "California"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "215977f63f4aa6bfc4bdadf038bc4490afa4f07614d8b735b8316f7aa89bdeea",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Opened the state list, chose California, and continued. The page moved to /esa/complaince and asks “What do I need to know about ESA in California?” with an I Acknowledge & Continue button. No later question was answered.",
+    "startPath": "/esa/choose-state",
+    "endPath": "/esa/complaince",
+    "endAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Compliance"
+      },
+      {
+        "text": "California"
+      },
+      {
+        "role": "heading",
+        "name": "What do I need to know about ESA in California?"
+      },
+      {
+        "text": "Fair Housing Act (FHA)"
+      },
+      {
+        "text": "Under federal law, landlords in all 50 states must make reasonable accommodations for tenants with ESAs, even at \"no pets\" properties. You can't be denied housing or charged extra fees, deposits, or rent because of your emotional support animal."
+      },
+      {
+        "text": "Documentation Requirements"
+      },
+      {
+        "text": "Enforcement of Housing Laws"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Location"
+      },
+      {
+        "text": "YOUR STATE"
+      },
+      {
+        "role": "heading",
+        "name": "What state do you live in?"
+      },
+      {
+        "role": "combobox",
+        "name": "Select State",
+        "placeholder": "Select State"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "link",
+        "name": "Log in"
+      },
+      {
+        "role": "document",
+        "name": "ESA Letter | WellnessWag Patient Portal"
+      },
+      {
+        "text": "Already have an account? Log in"
+      }
+    ],
+    "endWaitMs": 15490,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

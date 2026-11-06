@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.432Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "ae992b5d13d48d9312077e2993888c7b9a8c897585b74552e32d5edc5bca1a14",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Pressed Continue on the ESA walkthrough. The page moved to /esa/onboarding?step=esa_reason and asks “Why do you need an ESA Letter?” with Housing, Travel, Student Housing, and Other. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_walkthrough",
+    "endPath": "/esa/onboarding?step=esa_reason",
+    "endAnchors": [
+      {
+        "text": "Why do you need an ESA Letter?"
+      },
+      {
+        "text": "Housing"
+      },
+      {
+        "text": "Travel"
+      },
+      {
+        "text": "Student Housing"
+      },
+      {
+        "text": "Other"
+      },
+      {
+        "role": "image",
+        "name": "A dog and a cat"
+      },
+      {
+        "role": "button",
+        "name": "Housing"
+      },
+      {
+        "role": "button",
+        "name": "Travel"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "We'll walk you through the process."
+      },
+      {
+        "role": "image",
+        "name": "A man with his dog"
+      },
+      {
+        "role": "heading",
+        "name": "Complete Online Assessment"
+      },
+      {
+        "text": "Step 1"
+      },
+      {
+        "role": "heading",
+        "name": "Consultation with State-Licensed Professional"
+      },
+      {
+        "text": "Step 2"
+      },
+      {
+        "role": "heading",
+        "name": "Receive Your ESA Letter"
+      },
+      {
+        "text": "Step 3"
+      }
+    ],
+    "endWaitMs": 13666,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

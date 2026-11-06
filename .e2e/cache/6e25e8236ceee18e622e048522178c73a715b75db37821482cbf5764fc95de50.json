@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:37:02.802Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "fe0f98dc5682efc0f51b7951d9d78e9ccb071314768a4f2b99ccb70e618e3a22",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose Yes on “Does your worrying interfere with any major life activity?”. The page moved to /esa/onboarding?step=esa_symptoms and asks “What symptoms affect your day to day life?”. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_interferes_life",
+    "endPath": "/esa/onboarding?step=esa_symptoms",
+    "endAnchors": [
+      {
+        "text": "What symptoms affect your day to day life?"
+      },
+      {
+        "text": "Please select all that apply."
+      },
+      {
+        "text": "Anxiety"
+      },
+      {
+        "text": "Depression"
+      },
+      {
+        "text": "Panic Attacks"
+      },
+      {
+        "text": "PTSD"
+      },
+      {
+        "text": "Insomnia/Sleep Disturbance"
+      },
+      {
+        "text": "Other"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Does your worrying interfere with any major life activity?"
+      },
+      {
+        "text": "Major Life Activities include, but are not limited to, caring for oneself, performing manual tasks, seeing, hearing, eating, sleeping, walking, standing, lifting, bending, speaking, breathing, learning, reading, concentrating, thinking, communicating, and working."
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "endWaitMs": 21249,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

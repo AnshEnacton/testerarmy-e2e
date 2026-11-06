@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T09:20:42.308Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Temporary Permit (for disabilities last…\"",
+        "target": {
+          "role": "button",
+          "name": "Temporary Permit (for disabilities lasting 6 months or less)"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-placard.e2e.ts::new%20patient%20reaches%20ParkingMD%20placard%20checkout",
+      "targetId": "web",
+      "instructionDigest": "86d9b1ef3c53a8d8d64362a8aa121786cf9c9e716aae0d7e40fbfffdeb808b50",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Selected Temporary Permit (for disabilities lasting 6 months or less) and pressed Continue. The portal left permit type and opened /placard/why, showing “You're Likely Eligible! Let's Get Your Permit Fast.” Did not continue further.",
+    "startPath": "https://patient.parkingmd.com/placard/onboarding?step=permit_type",
+    "endPath": "https://patient.parkingmd.com/placard/why",
+    "endAnchors": [
+      {
+        "text": "You're Likely Eligible!"
+      },
+      {
+        "text": "Let's Get Your Permit Fast"
+      },
+      {
+        "role": "heading",
+        "name": "Why do people choose ParkingMD?"
+      },
+      {
+        "role": "heading",
+        "name": "ParkingMD Today"
+      },
+      {
+        "text": "Fastest & Cheapest"
+      },
+      {
+        "role": "heading",
+        "name": "Traditional Doctor Route"
+      },
+      {
+        "text": "Start your evaluation now"
+      },
+      {
+        "text": "Licensed California physician"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Now let's check"
+      },
+      {
+        "text": "Your eligibility in"
+      },
+      {
+        "text": "How long you need permit?"
+      },
+      {
+        "text": "Disabled Veteran"
+      },
+      {
+        "text": "This is for the disabled veteran license plate only. You'll need a 100% service-connected disability rating to qualify. Rated below 100%? A standard placard above is the right choice."
+      },
+      {
+        "role": "heading",
+        "name": "Now let's check Your eligibility in California"
+      },
+      {
+        "role": "button",
+        "name": "Disabled Veteran This is for the disabled veteran license plate only. You'll need a 100% service-connected disability rating to qualify. Rated below 100%? A standard placard above is the right choice."
+      }
+    ],
+    "endWaitMs": 12662,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

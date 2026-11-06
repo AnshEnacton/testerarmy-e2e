@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:42:13.224Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Anxiety\"",
+        "target": {
+          "role": "button",
+          "name": "Anxiety"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "63aa688f7448b226c655aed9f6146eaf89f7fc2af0e50f3e154c9b83771baa6f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose only Anxiety on “What symptoms affect your day to day life?” and pressed Continue. The page moved to /esa/onboarding?step=esa_symptoms_impact and asks whether symptoms negatively affect daily life. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_symptoms",
+    "endPath": "/esa/onboarding?step=esa_symptoms_impact",
+    "endAnchors": [
+      {
+        "text": "Do your symptoms negatively affect your daily life at school, work, social activities, with family, or your own self-care?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "text": "Let me specify"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      },
+      {
+        "role": "button",
+        "name": "Let me specify"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "What symptoms affect your day to day life?"
+      },
+      {
+        "text": "Please select all that apply."
+      },
+      {
+        "text": "Anxiety"
+      },
+      {
+        "text": "Depression"
+      },
+      {
+        "text": "Panic Attacks"
+      },
+      {
+        "text": "PTSD"
+      },
+      {
+        "text": "Insomnia/Sleep Disturbance"
+      },
+      {
+        "text": "Other"
+      }
+    ],
+    "endWaitMs": 14922,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

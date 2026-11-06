@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:34:54.382Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"New Patient\"",
+        "target": {
+          "role": "button",
+          "name": "New Patient"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "6a0b11897e3dee46ee62685d459c83fe1d7d58cf7af74f3de0e9e86fdce95429",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Chose New Patient. The page moved to /esa/choose-state and asks “What state do you live in?” with a state dropdown still loading. No later question was answered.",
+    "startPath": "/esa/welcome",
+    "endPath": "/esa/choose-state",
+    "endAnchors": [
+      {
+        "text": "Location"
+      },
+      {
+        "role": "heading",
+        "name": "What state do you live in?"
+      },
+      {
+        "role": "combobox",
+        "name": "Select State",
+        "placeholder": "Select State"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "link",
+        "name": "Log in"
+      },
+      {
+        "role": "document",
+        "name": "ESA Letter | WellnessWag Patient Portal"
+      },
+      {
+        "text": "Already have an account? Log in"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Welcome"
+      },
+      {
+        "role": "heading",
+        "name": "Welcome!"
+      },
+      {
+        "role": "heading",
+        "name": "Are you a new or existing patient?"
+      },
+      {
+        "role": "button",
+        "name": "New Patient"
+      },
+      {
+        "role": "link",
+        "name": "Existing Patient"
+      },
+      {
+        "role": "button",
+        "name": "Open chat"
+      },
+      {
+        "role": "document",
+        "name": "ESA Letter - Welcome | WellnessWag Patient Portal"
+      }
+    ],
+    "endWaitMs": 13949,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

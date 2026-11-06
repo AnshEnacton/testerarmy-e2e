@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T06:48:29.528Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" in \"Need Wellness Wag help? Ask Sophie.\"",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "within": "Need Wellness Wag help? Ask Sophie."
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap link \"Get started\"",
+        "target": {
+          "role": "link",
+          "name": "Get started"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"New Patient\"",
+        "target": {
+          "role": "button",
+          "name": "New Patient"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap combobox \"Select State\"",
+        "target": {
+          "role": "combobox",
+          "name": "Select State",
+          "placeholder": "Select State"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap option \"California\"",
+        "target": {
+          "role": "option",
+          "name": "California"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"I Acknowledge & Continue\"",
+        "target": {
+          "role": "button",
+          "name": "I Acknowledge & Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Housing\"",
+        "target": {
+          "role": "button",
+          "name": "Housing"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"In the future\"",
+        "target": {
+          "role": "button",
+          "name": "In the future"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Within 2-3 Days\"",
+        "target": {
+          "role": "button",
+          "name": "Within 2-3 Days"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "3f19dfed3a0cf0e69c0af2b8c8390c985e4c76c10ae313167436999d0683b1bc",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Reached the Date of Birth screen after New Patient, California, compliance acknowledgment, Yes on the ESA letter question, Housing, In the future, Within 2-3 Days, and Yes to being 18 or older. No date, name, or card was entered.",
+    "startPath": "/services/esa",
+    "endPath": "/esa/onboarding?step=esa_date_of_birth",
+    "endAnchors": [
+      {
+        "text": "Back"
+      },
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Date of Birth"
+      },
+      {
+        "role": "textbox",
+        "name": "MM/DD/YYYY",
+        "placeholder": "MM/DD/YYYY"
+      },
+      {
+        "role": "button",
+        "name": "Date of Birth"
+      },
+      {
+        "text": "Your full date of birth (MM/DD/YYYY)"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "link",
+        "name": "Terms & Conditions"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "name": "Home"
+      },
+      {
+        "name": "Lemonade",
+        "text": "Lemon…"
+      },
+      {
+        "name": "Pet Insurance"
+      },
+      {
+        "name": "ESA letter"
+      },
+      {
+        "name": "PSD letter"
+      },
+      {
+        "name": "Parking Permit"
+      },
+      {
+        "name": "Doctor's Note"
+      },
+      {
+        "name": "Tinted Window"
+      }
+    ],
+    "endWaitMs": 16979,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

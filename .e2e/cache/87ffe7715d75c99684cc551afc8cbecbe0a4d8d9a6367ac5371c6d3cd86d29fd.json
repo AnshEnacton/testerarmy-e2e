@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-02T08:25:55.590Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"In the future\"",
+        "target": {
+          "role": "button",
+          "name": "In the future"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Within 2-3 Days\"",
+        "target": {
+          "role": "button",
+          "name": "Within 2-3 Days"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tool",
+        "summary": "tool type (run-time value)",
+        "derived": "date"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"One\"",
+        "target": {
+          "role": "button",
+          "name": "One"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Dog Dog\"",
+        "target": {
+          "role": "button",
+          "name": "Dog Dog"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Bella\" into textbox \"e.g. Bella\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Bella",
+          "placeholder": "e.g. Bella"
+        },
+        "value": "Bella"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Golden Retriever\" into textbox \"e.g. Golden Retriever\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Golden Retriever",
+          "placeholder": "e.g. Golden Retriever"
+        },
+        "value": "Golden Retriever"
+      },
+      {
+        "name": "tool",
+        "summary": "tool type (run-time value)",
+        "derived": "whole-node"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Bella helps me stay calm and gives me a…\" into textbox \"e.g. Bella helps me stay calm and gives…\"",
+        "target": {
+          "role": "textbox",
+          "name": "e.g. Bella helps me stay calm and gives me a reason to get outside every day",
+          "placeholder": "e.g. Bella helps me stay calm and gives me a reason to get outside every day"
+        },
+        "value": "Bella helps me stay calm and gives me a reason to get outside every day"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Female\"",
+        "target": {
+          "role": "button",
+          "name": "Female"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Sometimes\"",
+        "target": {
+          "role": "button",
+          "name": "Sometimes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Anxiety\"",
+        "target": {
+          "role": "button",
+          "name": "Anxiety"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Yes\"",
+        "target": {
+          "role": "button",
+          "name": "Yes"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Alex\" into textbox \"First Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "First Name",
+          "placeholder": "Enter your first name"
+        },
+        "value": "Alex"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Testpatient\" into textbox \"Last Name\"",
+        "target": {
+          "role": "textbox",
+          "name": "Last Name",
+          "placeholder": "Enter your last name"
+        },
+        "value": "Testpatient"
+      },
+      {
+        "name": "type",
+        "summary": "type \"alex.testpatient@example.com\" into textbox \"Email\"",
+        "target": {
+          "role": "textbox",
+          "name": "Email",
+          "placeholder": "Enter your email"
+        },
+        "value": "alex.testpatient@example.com"
+      },
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to receive text messages from W…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to receive text messages from WellnessWag about my application — including status updates, document delivery, and appointment reminders. Msg frequency varies. Msg & data rates may apply. Reply HELP for help, Reply STOP to unsubscribe. See our Terms"
+        },
+        "checked": true
+      },
+      {
+        "name": "check",
+        "summary": "check checkbox \"I agree to the WellnessWag Service Term…\"",
+        "target": {
+          "role": "checkbox",
+          "name": "I agree to the WellnessWag Service Terms and Informed Consent for Teletherapy, and confirm I'm at least 18."
+        },
+        "checked": true
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/example.e2e.ts::AI%20completes%20ESA%20onboarding%20up%20to%20patient%20details",
+      "targetId": "web",
+      "instructionDigest": "ef40a2c4eaf637bc3b9f1ca83fb62b9af70d39f6d7419b4d46eba51401a94d58",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Reached the patient details page (“You’re one step away!”) and filled First name Alex, Last name Testpatient, and Email alex.testpatient@example.com. Both agreement checkboxes are checked. The form was not submitted.",
+    "startPath": "/esa/onboarding?step=esa_fair_housing",
+    "endPath": "/esa/register",
+    "endAnchors": [
+      {
+        "text": "Register"
+      },
+      {
+        "role": "heading",
+        "name": "You’re one step away!"
+      },
+      {
+        "text": "Enter your details to see if you qualify for an ESA letter"
+      },
+      {
+        "text": "First Name"
+      },
+      {
+        "role": "textbox",
+        "name": "First Name",
+        "placeholder": "Enter your first name",
+        "value": "Alex"
+      },
+      {
+        "text": "Last Name"
+      },
+      {
+        "role": "textbox",
+        "name": "Last Name",
+        "placeholder": "Enter your last name",
+        "value": "Testpatient"
+      },
+      {
+        "text": "Phone Number"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Your ESA letter will comply with"
+      },
+      {
+        "text": "The Fair Housing Act."
+      },
+      {
+        "role": "heading",
+        "name": "Compliant letters include the clinician's license number, contact information, and letterhead."
+      },
+      {
+        "role": "heading",
+        "name": "The Fair Housing Act requires all landlords to accept compliant letters."
+      },
+      {
+        "role": "heading",
+        "name": "We help ensure your documentation includes the details housing providers need to review your request."
+      },
+      {
+        "role": "document",
+        "name": "ESA Letter | WellnessWag Patient Portal"
+      },
+      {
+        "role": "heading",
+        "name": "Your ESA letter will comply with The Fair Housing Act."
+      }
+    ],
+    "endWaitMs": 15200,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

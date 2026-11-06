@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor Desk lesson — learn e2e</title>
+    <style>
+      :root {
+        --paper: #f4efe6;
+        --card: #fffaf2;
+        --ink: #1c2430;
+        --muted: #5c564c;
+        --line: #e4d8c4;
+        --teal: #0e6b66;
+        --teal-deep: #083e3c;
+        --clay: #9a4630;
+        --good: #1c6b45;
+        --code: #1a211c;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font: 17px/1.55 "Segoe UI", Candara, sans-serif;
+      }
+      a { color: var(--teal-deep); }
+      code, pre, .cmd { font-family: Consolas, "Courier New", monospace; }
+      code { font-size: 0.92em; background: #efe6d6; padding: 0.1em 0.35em; border-radius: 4px; }
+      pre {
+        background: var(--code);
+        color: #f4efe6;
+        padding: 14px 16px;
+        border-radius: 12px;
+        overflow: auto;
+        line-height: 1.45;
+      }
+      pre code { background: transparent; color: inherit; padding: 0; }
+      .layout { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+      nav {
+        position: sticky;
+        top: 0;
+        align-self: start;
+        height: 100vh;
+        overflow: auto;
+        padding: 22px 16px;
+        border-right: 1px solid var(--line);
+        background: #efe7d8;
+      }
+      nav p { margin: 0 0 12px; font-family: Georgia, "Palatino Linotype", serif; font-size: 1.15rem; }
+      nav a { display: block; color: var(--ink); text-decoration: none; padding: 6px 8px; border-radius: 8px; }
+      nav a:hover { background: #e4d8c4; }
+      main { width: min(880px, calc(100% - 48px)); margin: 0 auto; padding: 36px 0 80px; }
+      h1, h2, h3 { font-family: Georgia, "Palatino Linotype", serif; line-height: 1.2; }
+      h1 { font-size: 2.6rem; margin: 0 0 8px; }
+      h2 { margin-top: 2.4rem; border-top: 1px solid var(--line); padding-top: 1.4rem; }
+      h3 { margin-top: 1.6rem; }
+      .kicker { letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); font-size: 0.78rem; margin: 0; }
+      .lede { font-size: 1.15rem; color: var(--muted); }
+      .card, .life, .warn {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin: 14px 0;
+      }
+      .life { border-left: 6px solid var(--teal); }
+      .warn { border-left: 6px solid var(--clay); }
+      .life strong, .warn strong { display: block; margin-bottom: 4px; }
+      table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; background: var(--card); }
+      th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+      th { font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+      .cmd {
+        background: var(--teal-deep);
+        color: #f4efe6;
+        padding: 12px 14px;
+        border-radius: 10px;
+        overflow: auto;
+      }
+      ol.steps li { margin: 8px 0; }
+      @media (max-width: 860px) {
+        .layout { grid-template-columns: 1fr; }
+        nav { position: relative; height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+        main { width: min(100% - 28px, 880px); }
+      }
+      @media print {
+        nav { display: none; }
+        .layout { display: block; }
+        pre, .cmd { white-space: pre-wrap; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <nav>
+        <p>Harbor Desk</p>
+        <a href="#start">Start here</a>
+        <a href="#map">What you got</a>
+        <a href="#shape">Shape of a test</a>
+        <a href="#two">Exact steps and the agent</a>
+        <a href="#tour">Tour of the tests</a>
+        <a href="#locators">Finding things</a>
+        <a href="#expect">Checking things</a>
+        <a href="#commands">Commands</a>
+        <a href="#fail">When a test fails</a>
+        <a href="#real">Use it on a real app</a>
+        <a href="#practice">Practice</a>
+      </nav>
+      <main>
+        <p class="kicker">A practice app for the e2e runner</p>
+        <h1>Learn it by running it.</h1>
+        <p class="lede">
+          Harbor Desk is a tiny clinic front desk. The tests in <code>lab/tests</code> drive it.
+          This page is the map: what to run, what each test is proving, and where that same check shows up on a real product.
+        </p>
+
+        <section id="start">
+          <h2>Start here</h2>
+          <p>Open a terminal in this project. You can leave this page open beside it.</p>
+          <ol class="steps">
+            <li>
+              <strong>Look at the app yourself.</strong>
+              <div class="cmd">npm run lab</div>
+              Then open <a href="http://127.0.0.1:4317">http://127.0.0.1:4317</a>.
+              Sign in with <code>qa@clinic.test</code> / <code>clinic-pass</code>. Click through Board, Patients, Intake, and Settings. Stop the server later with Ctrl+C. You do not have to stop it to run tests: the tests start their own copy on a free port.
+            </li>
+            <li>
+              <strong>See the test list without running anything.</strong>
+              <div class="cmd">npx e2e list --config e2e.lab.config.ts</div>
+            </li>
+            <li>
+              <strong>Run the exact tests.</strong> These do not call a model.
+              <div class="cmd">npm run test:lab</div>
+            </li>
+            <li>
+              <strong>Watch one file in a real browser window.</strong>
+              <div class="cmd">npx e2e run --config e2e.lab.config.ts lab/tests/board.e2e.ts --headed</div>
+            </li>
+          </ol>
+          <div class="warn">
+            <strong>Your other config is untouched.</strong>
+            <code>npx e2e run</code> and <code>npm run test:e2e</code> still use <code>e2e.config.ts</code> and <code>tests/example.e2e.ts</code>. The lab only runs when you pass <code>--config e2e.lab.config.ts</code>, which the <code>test:lab</code> scripts already do.
+          </div>
+        </section>
+
+        <section id="map">
+          <h2>What you got</h2>
+          <table>
+            <thead>
+              <tr><th>File</th><th>What it is</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>lab/public/</code></td><td>The app: sign-in, task board, patient table, intake wizard, settings. Plain HTML, CSS, and one JavaScript file. No build step.</td></tr>
+              <tr><td><code>lab/server.mjs</code></td><td>Serves that app and a slow <code>/api/queue</code> endpoint.</td></tr>
+              <tr><td><code>lab/fixtures/card.txt</code></td><td>The fake insurance card a test uploads.</td></tr>
+              <tr><td><code>e2e.lab.config.ts</code></td><td>Tells the runner how to start the app, where the tests are, and the practice account.</td></tr>
+              <tr><td><code>lab/tests/*.e2e.ts</code></td><td>The tests. Read these next to this page.</td></tr>
+              <tr><td><code>lab/public/guide.html</code></td><td>This page. Double-click it, or open it from the app: “Open the lesson”.</td></tr>
+            </tbody>
+          </table>
+          <p>Results land in <code>.e2e-lab/</code>, not in the <code>.e2e/</code> folder your other runs use. The app log for a lab run is <code>.e2e/logs/lab.log</code>.</p>
+        </section>
+
+        <section id="shape">
+          <h2>Shape of a test</h2>
+          <p>A test file is a small script. <code>test</code> from <code>@e2e-dev/web</code> gives you a browser. <code>expect</code> from <code>e2e</code> checks the screen. The runner starts the app, opens a fresh browser for each test, and closes it after.</p>
+          <pre><code>import { test } from '@e2e-dev/web';
+import { expect } from 'e2e';
+
+test('signs in with the practice account', async ({ app, screen, browser }) => {
+  await app.open('/login');
+  await screen.getByLabel('Email').fill('qa@clinic.test');
+  await screen.getByLabel('Password').fill('clinic-pass');
+  await screen.getByRole('button', 'Sign in').tap();
+  await expect(browser).toHaveURL('/board');
+  await expect(screen.getByRole('heading', "Today's board")).toBeVisible();
+});</code></pre>
+          <p>Three fixtures do almost all of the work:</p>
+          <table>
+            <thead><tr><th>Name</th><th>You use it to</th></tr></thead>
+            <tbody>
+              <tr><td><code>app</code></td><td>Open a path: <code>app.open('/patients')</code>. Also go back, clear storage, or take a screenshot.</td></tr>
+              <tr><td><code>screen</code></td><td>Find a control and act on it: tap, fill, check, select, hover, press a key.</td></tr>
+              <tr><td><code>browser</code></td><td>Things only a browser has: the URL, viewport size, downloads, network stubs, native confirm dialogs, iframes.</td></tr>
+              <tr><td><code>agent</code></td><td>Hand one goal to a model, in plain language. Covered below. Needs an API key.</td></tr>
+            </tbody>
+          </table>
+          <div class="life">
+            <strong>On a real app.</strong>
+            Open the page, do the thing a user does, then pin the fact that must stay true. A heading, a count, a URL, an error. If that fact changes, the test fails and you have a regression.
+          </div>
+        </section>
+
+        <section id="two">
+          <h2>Exact steps and the agent</h2>
+          <p>You have two ways to drive the screen. Most of this lab uses the first. Two tests use the second.</p>
+          <h3>Exact steps: <code>screen</code></h3>
+          <p>You name the control and the action. The test does that and nothing else. Use this when the value matters: a price, a count, a permission, an error message, a file name.</p>
+          <pre><code>await screen.getByLabel('New task').fill('Call the lab');
+await screen.getByRole('button', 'Add task').tap();
+await expect(screen.getByRole('status', 'Open tasks')).toHaveText('2 open');</code></pre>
+          <h3>Agent steps: <code>agent.act</code></h3>
+          <p>You name the goal. The model looks at the screen and chooses the clicks. You still pin the outcome yourself, right after, with <code>expect</code> or <code>agent.assert</code>. That pin is what lets the next run replay the clicks without calling the model again.</p>
+          <pre><code>await agent.act('add a task named {title}', { params: { title: 'Call the lab' } });
+await expect(screen.getByRole('checkbox', 'Call the lab')).toBeVisible();</code></pre>
+          <p>One goal per <code>act</code>. “Add the task” is one goal. “Mark it done” is the next. A goal that tries to do three things gives you one recording and no place to see which part broke.</p>
+          <div class="life">
+            <strong>On a real app.</strong>
+            Use exact steps for money, counts, validation, and permissions. Use the agent for a long happy path whose buttons move around but whose outcome stays the same: an onboarding wizard, a booking flow, “get from the landing page to checkout”. The agent absorbs small copy changes. Your <code>expect</code> still guards the fact you care about.
+          </div>
+          <div class="warn">
+            <strong>The agent costs a model call the first time.</strong>
+            <code>npm run test:lab</code> skips those tests. Sign in once with <code>npx e2e login spacexai</code>, then run <code>npm run test:lab:agent</code>. The model is <code>grok('grok-4.7')</code> in <code>e2e.lab.config.ts</code>. A passing run is saved under <code>.e2e/cache/</code>. The next run replays it. <code>agent.assert</code> and <code>agent.extract</code> always call the model. They are judgments, not recordings.
+          </div>
+        </section>
+
+        <section id="tour">
+          <h2>Tour of the tests</h2>
+          <p>Run any single file by giving its path. Add <code>--headed</code> when you want to watch.</p>
+          <div class="cmd">npx e2e run --config e2e.lab.config.ts lab/tests/patients.e2e.ts --headed</div>
+
+          <h3><code>lab/tests/login.e2e.ts</code> — the front door</h3>
+          <p>Empty form, wrong password, a good sign-in, Enter in the password field, sign out, and a visit to <code>/board</code> while signed out. The good sign-in fills the password with <code>credentials.user('receptionist').password</code>. The test file never contains the password as a value it invented. The account lives in <code>e2e.lab.config.ts</code>. On a real project the password comes from the environment, and reports redact it.</p>
+          <div class="life"><strong>On a real app.</strong> Every login, signup, and “session expired” redirect. Assert the error text and the URL you landed on. A test that only checks “some alert appeared” will stay green when you show the wrong error.</div>
+
+          <h3><code>lab/tests/auth.setup.e2e.ts</code> — sign in once</h3>
+          <p><code>test.setup</code> signs in and <code>session.save('receptionist')</code> stores cookies and local storage for this run. Any test with <code>session: 'receptionist'</code> starts already signed in. If you run only the board file, the setup still runs first.</p>
+          <div class="life"><strong>On a real app.</strong> Admin, member, and billing-owner accounts. Sign each one in once, then write the tests about the feature, not about the login form. The login form keeps its own tests.</div>
+
+          <h3><code>lab/tests/board.e2e.ts</code> — create, filter, confirm</h3>
+          <p>Adds a task and checks the count. Rejects an empty task. Submits with Enter. Marks a task done and uses the All / Open / Done tabs. Opens a delete dialog, keeps the task, then deletes it. Closes that dialog with Escape. Drives the browser’s own <code>confirm()</code> for “Clear finished”: dismiss leaves the task, accept removes it.</p>
+          <p>The count is a status with the accessible name “Open tasks” and the text <code>2 open</code>. The test asks for that name, then checks the text. That is the pattern to copy: the name tells you which status, the text tells you the value.</p>
+          <div class="life"><strong>On a real app.</strong> Carts, todo lists, review queues, “are you sure?” deletes, and old admin pages that still call <code>window.confirm</code>. Register <code>browser.onDialog</code> before the click that opens the native dialog.</div>
+
+          <h3><code>lab/tests/patients.e2e.ts</code> — tables, files, network</h3>
+          <p>This file is the one to re-read when you test an admin screen.</p>
+          <ul>
+            <li><strong>Search as you type</strong> uses <code>pressSequentially</code>. Use that when the app reacts to each key. <code>fill</code> sets the whole value at once and is what you want for a normal form field.</li>
+            <li><strong>Status filter and sort</strong> check the row headers in order. The order is the assertion. “The table has Maya in it” would still pass if the sort was backwards.</li>
+            <li><strong>Export</strong> waits for the download and reads the file. The filter is Waiting, so the CSV contains Maya and Jonah and not Luis.</li>
+            <li><strong>Refresh queue</strong> hits a real endpoint that takes a second. The test watches the progress bar, then the status text, and also reads the HTTP response.</li>
+            <li><strong>Abort and stub</strong> replace that endpoint. One simulates a dead API. One returns a payload you chose, so the test proves the screen renders the response rather than a hardcoded sentence.</li>
+            <li><strong>Tooltip</strong> is a hover. <strong>Visit slip</strong> is a dialog whose content lives in an iframe. Queries do not cross into an iframe. <code>browser.frameLocator</code> steps inside, and then the usual <code>getByRole</code> works.</li>
+          </ul>
+          <div class="life"><strong>On a real app.</strong> User tables, order tables, invoice export, “refresh” buttons, payment or search APIs you must not hit for real, embedded card forms, maps, and charts. Stub the network when the real service is slow, paid, or shared with other people. Assert the file contents when the product’s job is to produce a file.</div>
+
+          <h3><code>lab/tests/intake.e2e.ts</code> — a wizard</h3>
+          <p>Step 1 refuses a missing or broken email. Step 2 refuses a missing reason or provider. Back keeps what you typed. The happy path uploads <code>lab/fixtures/card.txt</code>, checks the consent box, and expects the receipt “Saved intake for Maya Chen.”</p>
+          <div class="life"><strong>On a real app.</strong> Checkout, onboarding, insurance, and any “step 2 of 4” form. Assert you stayed on the step when the input is bad. Assert the values survived Back. Assert the receipt, not only that the button was clickable.</div>
+
+          <h3><code>lab/tests/settings.e2e.ts</code> — state that must survive</h3>
+          <p>Turns on email digests, leaves the page, comes back, and expects the switch to still be on. Turns on night theme, reloads, and expects both the words on screen and the <code>night</code> class on the page. The words are the contract a user sees. The class is extra proof the theme really changed.</p>
+          <div class="life"><strong>On a real app.</strong> Settings, feature toggles, and anything saved in the browser or on the server. A switch that flips and flips back on refresh is a bug. Reload, or leave and return, before you call it saved.</div>
+
+          <h3><code>lab/tests/shell.e2e.ts</code> — layout and a dead link</h3>
+          <p>Shrinks the window to a phone width before the page opens, then opens the menu and goes to Patients. The other test opens <code>/not-a-page</code> and follows “Back to the board”.</p>
+          <div class="life"><strong>On a real app.</strong> The phone layout of a site you already test on desktop, and the 404 or empty state. Set the viewport before <code>app.open</code> when the first paint matters. A menu that only breaks at 390px wide will not show up in a 1280px test.</div>
+
+          <h3><code>lab/tests/agent-board.e2e.ts</code> — the model</h3>
+          <p>Two goals, each followed by an exact check. The second test also asks the model to read the visible task titles into a Zod schema (<code>agent.extract</code>) and to judge one sentence (<code>agent.assert</code>). Judge the meaning. Do not assert the model’s exact paragraph.</p>
+          <div class="life"><strong>On a real app.</strong> A journey you are tired of rewriting every time a label moves, as long as you still pin the outcome. Keep one <code>act</code> to one outcome. Put product vocabulary in <code>agents.default.context</code> in the config, the way this lab describes what “open tasks” means.</div>
+        </section>
+
+        <section id="locators">
+          <h2>Finding things</h2>
+          <p>Prefer the accessible name: the label, the button text, the heading. That is what a person using a keyboard or a screen reader uses, and it survives class-name refactors.</p>
+          <table>
+            <thead><tr><th>Query</th><th>Use it for</th><th>Example in this app</th></tr></thead>
+            <tbody>
+              <tr><td><code>getByRole(role, name)</code></td><td>Buttons, links, headings, checkboxes, tabs, dialogs, status messages</td><td><code>getByRole('button', 'Add task')</code></td></tr>
+              <tr><td><code>getByLabel(text)</code></td><td>Inputs that have a <code>&lt;label&gt;</code></td><td><code>getByLabel('Email')</code></td></tr>
+              <tr><td><code>getByPlaceholder(text)</code></td><td>An input whose only hint is the placeholder</td><td>The new-task field also has a label, so the label wins</td></tr>
+              <tr><td><code>getByText(text)</code></td><td>A sentence on the page</td><td><code>getByText('No tasks on this filter.')</code></td></tr>
+              <tr><td><code>getByRole(...).filter({ hasText })</code></td><td>A row that contains some text</td><td>Narrow a table row when the name is not on one cell</td></tr>
+              <tr><td><code>browser.frameLocator(css)</code></td><td>Stepping into an iframe</td><td>The visit slip</td></tr>
+              <tr><td><code>browser.locator(css)</code></td><td>A last resort, when nothing has a name</td><td>The lab uses it once, for the <code>html</code> class</td></tr>
+            </tbody>
+          </table>
+          <p>Names are exact. <code>getByRole('button', 'Save')</code> does not match “Save changes”. A locator that matches two things fails immediately. A locator that matches nothing waits, then fails. Fix the name. Do not add a sleep.</p>
+          <p>Actions you will reuse: <code>tap</code>, <code>fill</code>, <code>pressSequentially</code>, <code>press('Enter')</code>, <code>check</code>, <code>selectOption({ label })</code>, <code>hover</code>, <code>setInputFiles</code>.</p>
+          <div class="life"><strong>On a real app.</strong> If a button has no accessible name, add one in the product (<code>aria-label</code> or visible text) instead of reaching for a CSS class. The test gets stable, and the product gets easier to use.</div>
+        </section>
+
+        <section id="expect">
+          <h2>Checking things</h2>
+          <p><code>expect</code> on a locator retries for a few seconds. That is how you wait for a slow queue check. You do not write <code>setTimeout</code>.</p>
+          <table>
+            <thead><tr><th>Check</th><th>When</th></tr></thead>
+            <tbody>
+              <tr><td><code>toBeVisible</code> / <code>toBeHidden</code></td><td>It should be on screen, or gone</td></tr>
+              <tr><td><code>toHaveText</code> / <code>toContainText</code></td><td>The words. <code>toHaveText</code> is the whole string. A list of strings checks order.</td></tr>
+              <tr><td><code>toHaveValue</code> / <code>toBeChecked</code></td><td>Form state</td></tr>
+              <tr><td><code>toHaveCount</code></td><td>How many matches. Zero is allowed: the thing is gone.</td></tr>
+              <tr><td><code>toHaveURL</code> / <code>toHaveTitle</code></td><td>Where you are. The URL is relative to the app.</td></tr>
+              <tr><td><code>expect(value).toBe</code> / <code>toContain</code> / <code>toMatchObject</code></td><td>A download, a JSON body, an <code>agent.extract</code> result. These do not retry.</td></tr>
+            </tbody>
+          </table>
+          <p>A read such as <code>textContent()</code> answers once. If the number is still loading, use <code>toHaveText</code> so the runner keeps looking until it settles.</p>
+        </section>
+
+        <section id="commands">
+          <h2>Commands</h2>
+          <p>Run these from the project folder. The config flag is what points the runner at Harbor Desk.</p>
+          <table>
+            <thead><tr><th>Command</th><th>What you get</th></tr></thead>
+            <tbody>
+              <tr><td><code>npm run lab</code></td><td>The app on <a href="http://127.0.0.1:4317">http://127.0.0.1:4317</a> for you to click around.</td></tr>
+              <tr><td><code>npm run test:lab</code></td><td>Every exact test. Skips the agent tag.</td></tr>
+              <tr><td><code>npm run test:lab:headed</code></td><td>The same, with a window you can see.</td></tr>
+              <tr><td><code>npm run test:lab:agent</code></td><td>Only the two model tests. Needs the Grok login from <code>npx e2e login spacexai</code>.</td></tr>
+              <tr><td><code>npx e2e list --config e2e.lab.config.ts</code></td><td>The names of the tests. Nothing starts.</td></tr>
+              <tr><td><code>npx e2e run --config e2e.lab.config.ts lab/tests/login.e2e.ts</code></td><td>One file.</td></tr>
+              <tr><td><code>npx e2e run --config e2e.lab.config.ts --grep "queue"</code></td><td>Tests whose titles contain “queue”.</td></tr>
+              <tr><td><code>npx e2e run --config e2e.lab.config.ts --tag smoke</code></td><td>The short sign-in tests plus “adds a task”.</td></tr>
+              <tr><td><code>npx e2e run --config e2e.lab.config.ts --last-failed</code></td><td>After a red run, only what failed.</td></tr>
+              <tr><td><code>npx e2e run --config e2e.lab.config.ts lab/tests/board.e2e.ts --debug</code></td><td>Timings. For an agent test, also what the model tried.</td></tr>
+              <tr><td><code>npx e2e run --config e2e.lab.config.ts --reporter list,markdown</code></td><td>A <code>.e2e-lab/summary.md</code> you can paste into notes or a pull request.</td></tr>
+              <tr><td><code>npx e2e cache stats --config e2e.lab.config.ts</code></td><td>How many agent steps are recorded.</td></tr>
+              <tr><td><code>npx e2e guide writing-tests</code></td><td>The runner’s own writing guide, from the installed package.</td></tr>
+            </tbody>
+          </table>
+          <div class="life">
+            <strong>On a real app.</strong>
+            <code>--grep</code> and a file path are how you rerun the one case you are fixing. <code>--tag smoke</code> is the two-minute check before you push. <code>--last-failed</code> is the loop after a red CI run. <code>--headed</code> is for the failure you cannot picture from the log. In CI you drop <code>--headed</code>, keep the same command, and upload <code>.e2e-lab/report.json</code> plus <code>.e2e-lab/results</code>.
+          </div>
+        </section>
+
+        <section id="fail">
+          <h2>When a test fails</h2>
+          <ol>
+            <li>Read the error in the terminal. The code is a name such as <code>LOCATOR_NOT_FOUND</code> or <code>ASSERTION_FAILED</code>, plus the line in your test.</li>
+            <li>Open the trace it prints, a <code>trace.md</code> under <code>.e2e-lab/results/</code>. It shows each step, the screen at the failure, and what the app logged.</li>
+            <li>If the app log matters, open <code>.e2e/logs/lab.log</code>.</li>
+            <li>Fix the locator, the expected text, or the app. Run that file again.</li>
+          </ol>
+          <p>A locator that matches two nodes is <code>LOCATOR_AMBIGUOUS</code>. Make the name more specific. A check that never becomes true is <code>ASSERTION_FAILED</code>. The text on the screen and the text in the test disagree, or the screen never arrived.</p>
+          <p>Exit code 0 means the selected tests passed. Exit code 1 means a test failed. Exit code 2 means the command or the config is wrong, so retrying the same command will not help.</p>
+          <div class="life"><strong>On a real app.</strong> The trace is the bug report. Screenshot, URL, and the step that failed are what you hand to the person who owns the page. Do not re-run ten times hoping it goes green. If it is flaky, the trace from the red attempt is the evidence.</div>
+        </section>
+
+        <section id="real">
+          <h2>Use it on a real app</h2>
+          <p>Harbor Desk exists so the pieces are easy to see. A product you are testing already has its own URL. You point a config at that URL. You do not copy these screens.</p>
+          <pre><code>import type { E2EConfig } from 'e2e';
+import { web } from '@e2e-dev/web';
+
+export default {
+  targets: [
+    {
+      engine: web(),
+      app: {
+        url: 'http://127.0.0.1:3000',
+        command: { executable: 'npm', args: ['run', 'dev'], log: '.e2e/logs/app.log' },
+      },
+    },
+  ],
+} satisfies E2EConfig;</code></pre>
+          <p>That <code>command</code> starts the product, waits until the URL answers, and stops it when the run ends. For an app that is already deployed, skip <code>command</code> and set <code>url</code> to that site. That is what <code>e2e.config.ts</code> in this project already does.</p>
+          <p>Then write tests the way the lab does:</p>
+          <ul>
+            <li>One file per area: login, the list, the wizard, settings.</li>
+            <li>A setup test for each account. Feature tests declare <code>session</code>.</li>
+            <li>Exact <code>expect</code> after every important step.</li>
+            <li><code>agent.act</code> only for a goal, with <code>{title}</code> style params for values, and a check immediately after.</li>
+            <li>Network stubs for anything slow, paid, or shared.</li>
+            <li>A phone-sized viewport for the layout you know people use on a phone.</li>
+          </ul>
+          <div class="life">
+            <strong>A useful first test on a product you already have.</strong>
+            Sign in, open the main screen, and assert one heading and one URL. That single test tells you the runner can start, the account works, and the app booted. Grow from there one screen at a time. Tag it <code>smoke</code> and run it on every change.
+          </div>
+        </section>
+
+        <section id="practice">
+          <h2>Practice</h2>
+          <p>Do these in order. Each one changes a test or adds one, then you run that file.</p>
+          <ol>
+            <li>Change the empty-task message in <code>lab/public/app.js</code> and update the matching line in <code>lab/tests/board.e2e.ts</code>. Run the board file. Put the message back if you want the suite green.</li>
+            <li>Add a test that unchecks “Print the roster” and expects the open count to become <code>2 open</code>.</li>
+            <li>On Patients, filter to “Checked out” and export. Assert the CSV contains Priya Shah and does not contain Maya Chen.</li>
+            <li>Run the board file with <code>--headed</code> and watch the delete dialog.</li>
+            <li>Break a locator on purpose (ask for a button named “Save”). Run the file. Open the <code>trace.md</code> the terminal prints. Put the locator back.</li>
+            <li>After <code>npx e2e login spacexai</code>, run <code>npm run test:lab:agent</code> twice. The second run should replay the recorded steps. <code>npx e2e cache stats --config e2e.lab.config.ts</code> shows the recordings.</li>
+          </ol>
+          <p>The pages worth knowing by heart are Board and Patients. Between them they cover forms, lists, dialogs, tables, files, and a slow API. That is most of the UI testing you will do on a real product.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.598Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "4fad2d87a13326b0645b6d549c44194b9a5a907320edf118c0c85d132fddc90b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Clicked Continue on the Air Carrier Access Act page. The page advanced to /psd/onboarding?step=psd_turnaround with “How fast do you need your PSD Letter?” and Within 24 Hours / Within 2-3 Days choices. Did not answer that question or go back.",
+    "startPath": "/psd/onboarding?step=psd_acaa_compliant",
+    "endPath": "/psd/onboarding?step=psd_turnaround",
+    "endAnchors": [
+      {
+        "text": "How fast do you need your PSD Letter?"
+      },
+      {
+        "role": "image",
+        "name": "A service dog"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Our solutions are compliant with the Air Carrier Access Act."
+      },
+      {
+        "text": "Psychiatric Service Animals are accepted on all airlines, provided your animal meets the standards and expectations below. The DOT allows you to train the animal yourself and there is no official test to determine whether an animal meets those standards of training — just good judgement."
+      },
+      {
+        "role": "heading",
+        "name": "Is trained in a task that relieves a symptom of your mental health disability."
+      },
+      {
+        "role": "heading",
+        "name": "Remains under your control and follows airline and public-access requirements while traveling."
+      },
+      {
+        "role": "heading",
+        "name": "Provides trained support that helps you manage disability-related symptoms while away from home."
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      }
+    ],
+    "endWaitMs": 14744,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

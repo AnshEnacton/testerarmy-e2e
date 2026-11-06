@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T09:32:14.465Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Continue\"",
+        "target": {
+          "role": "button",
+          "name": "Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "b6c97d123dcca537a1d8aa76d16cd02d585fe6bd988dd6db0e255bb07c791222",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Pressed Continue on the “We got you covered!” information screen. The page moved to /esa/onboarding?step=esa_pet_count and asks “How many pets do you have?” with One, Two, Three, and Four or more. That later question was not answered.",
+    "startPath": "/esa/onboarding?step=esa_got_you_covered",
+    "endPath": "/esa/onboarding?step=esa_pet_count",
+    "endAnchors": [
+      {
+        "text": "How many pets do you have?"
+      },
+      {
+        "text": "One"
+      },
+      {
+        "text": "Two"
+      },
+      {
+        "text": "Three"
+      },
+      {
+        "text": "Four or more"
+      },
+      {
+        "role": "image",
+        "name": "A dog and a cat"
+      },
+      {
+        "role": "button",
+        "name": "One"
+      },
+      {
+        "role": "button",
+        "name": "Two"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "If you need more than just the standard ESA Letter"
+      },
+      {
+        "text": "We got you covered!"
+      },
+      {
+        "text": "Our Wellness Wag team is here to make the process as smooth and stress-free as possible for pet owners."
+      },
+      {
+        "role": "heading",
+        "name": "We'll help you with all your additional documents if extra paperwork is required."
+      },
+      {
+        "role": "heading",
+        "name": "Our licensed professionals are ready to address any questions from landlords, housing associations, or property managers, ensuring smooth communication and approval."
+      },
+      {
+        "role": "heading",
+        "name": "We'll guide you through the next steps and help keep your documentation complete and organized."
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "heading",
+        "name": "If you need more than just the standard ESA Letter We got you covered!"
+      }
+    ],
+    "endWaitMs": 12474,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

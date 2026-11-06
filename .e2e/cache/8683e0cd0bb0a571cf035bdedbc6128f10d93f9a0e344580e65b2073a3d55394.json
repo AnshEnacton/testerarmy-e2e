@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:43:08.646Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"PSD Letter Up to 2 Pets + 24 Hour Deliv…\"",
+        "target": {
+          "role": "button",
+          "name": "PSD Letter Up to 2 Pets + 24 Hour Delivery Included Most popular $149 $179 $30 off Included with Your PSD Letter: Legally enforced for rentals, vacation homes, and college dorms. Compliant with Fair Housing Act for housing. Evaluated by a licensed Medical"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "867b94134dfb9ff2404aef0fd8dba4ff28b2f7d9ffeeeecfd7ebdba7313a5d50",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Selected PSD Letter Up to 2 Pets + 24 Hour Delivery Included. Checkout shows Order Summary total $149.00, Subscribe & Save still selected, and the Pay $149.00 button. Did not enter a card or pay.",
+    "startPath": "/psd-letter-checkout/add-to-cart",
+    "endPath": "/psd-letter-checkout/checkout-with-2-pets",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Hear what our happy pet parents say!"
+      },
+      {
+        "role": "iframe",
+        "name": "Pet parent testimonial 1"
+      },
+      {
+        "role": "button",
+        "name": "Previous video"
+      },
+      {
+        "role": "button",
+        "name": "Next video"
+      },
+      {
+        "role": "heading",
+        "name": "Order Summary"
+      },
+      {
+        "text": "$179.00"
+      },
+      {
+        "text": "Spring Discount"
+      },
+      {
+        "text": "-$30.00"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Select the right option for your personal PSD Letter. If you need additional paperwork, it can be added later."
+      },
+      {
+        "text": "Most popular"
+      },
+      {
+        "text": "$149"
+      },
+      {
+        "text": "$179"
+      },
+      {
+        "text": "$30 off"
+      },
+      {
+        "text": "Full Refund if your PSD letter is not approved."
+      },
+      {
+        "text": "Interest-free payment plans are now available. Choose financing at checkout to pay in easy installments starting at $37.25."
+      },
+      {
+        "text": "Select Option"
+      }
+    ],
+    "endWaitMs": 24970,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

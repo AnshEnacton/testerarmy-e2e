@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T09:20:42.283Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Close\" in \"Need ParkingMD help? Ask Sarah.\"",
+        "target": {
+          "role": "button",
+          "name": "Close",
+          "within": "Need ParkingMD help? Ask Sarah."
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap link \"See if I Qualify\" (1 of 2)",
+        "target": {
+          "role": "link",
+          "name": "See if I Qualify",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-placard.e2e.ts::new%20patient%20reaches%20ParkingMD%20placard%20checkout",
+      "targetId": "web",
+      "instructionDigest": "c1f13b2a379f614546861c6f7403fba55e27cc6a64a681f3551ebf3b68691544",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Closed the Sarah chat, then clicked the first See if I Qualify link. The site opened the patient portal at /placard/welcome?state=ca, showing “Are you a new or existing patient?” with New Patient and Existing Patient options.",
+    "startPath": "https://parkingmd.com/california/handicap-placard",
+    "endPath": "https://patient.parkingmd.com/placard/welcome?state=ca",
+    "endAnchors": [
+      {
+        "role": "image",
+        "name": "ParkingMD"
+      },
+      {
+        "text": "Welcome"
+      },
+      {
+        "role": "button",
+        "name": "Menu"
+      },
+      {
+        "text": "Now let's check"
+      },
+      {
+        "text": "Your eligibility in"
+      },
+      {
+        "text": "California"
+      },
+      {
+        "role": "image",
+        "name": "state"
+      },
+      {
+        "role": "image",
+        "name": "Parking Permit"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "DMV won't issue placard without this doctor-signed form"
+      },
+      {
+        "role": "button",
+        "name": "Accessibility widget — Press Alt+A to open/close"
+      },
+      {
+        "role": "link",
+        "name": "Skip to content"
+      },
+      {
+        "text": "DMV won't issue placard without this doctor-signed form"
+      },
+      {
+        "role": "image",
+        "name": "ParkingMD logo"
+      },
+      {
+        "role": "link",
+        "name": "Benefits"
+      },
+      {
+        "role": "link",
+        "name": "FAQs"
+      },
+      {
+        "role": "button",
+        "name": "Resources"
+      }
+    ],
+    "endWaitMs": 15035,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

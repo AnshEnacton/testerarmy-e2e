@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-03T07:34:54.390Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"I Acknowledge & Continue\"",
+        "target": {
+          "role": "button",
+          "name": "I Acknowledge & Continue"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/esa.e2e.ts::new%20patient%20completes%20an%20ESA%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "43698246238e24ec89e7aa0196e22ac12cdd971e05e3bbd89ab9ab90e4426f7f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Acknowledged the California compliance page with I Acknowledge & Continue. The page moved to /esa/onboarding and asks “Are you looking for an ESA letter?” with Yes and No. That later question was not answered.",
+    "startPath": "/esa/complaince",
+    "endPath": "/esa/onboarding",
+    "endAnchors": [
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Are you looking for an ESA letter?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "button",
+        "name": "Continue"
+      },
+      {
+        "role": "image",
+        "name": "A dog and a cat"
+      },
+      {
+        "role": "document",
+        "name": "ESA Letter | WellnessWag Patient Portal"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Compliance"
+      },
+      {
+        "text": "Get Your"
+      },
+      {
+        "text": "Emotional Support Animal Letter"
+      },
+      {
+        "role": "image",
+        "name": "state"
+      },
+      {
+        "text": "California"
+      },
+      {
+        "text": "PATIENT NAME"
+      },
+      {
+        "role": "image",
+        "name": "Medical Professional Signature"
+      },
+      {
+        "role": "image",
+        "name": "Certified"
+      }
+    ],
+    "endWaitMs": 18789,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

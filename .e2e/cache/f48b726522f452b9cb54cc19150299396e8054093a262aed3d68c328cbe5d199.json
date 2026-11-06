@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T12:03:31.236Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "scrollTo",
+        "summary": "scroll combobox \"Type your state\" (2 of 2) into view",
+        "target": {
+          "role": "combobox",
+          "name": "Type your state",
+          "placeholder": "Type your state",
+          "position": {
+            "index": 1,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Texas\" into combobox \"Type your state\" (2 of 2)",
+        "target": {
+          "role": "combobox",
+          "name": "Type your state",
+          "placeholder": "Type your state",
+          "position": {
+            "index": 1,
+            "of": 2
+          }
+        },
+        "value": "Texas"
+      },
+      {
+        "name": "press",
+        "summary": "press \"Enter\" on combobox \"Type your state\" (2 of 2)",
+        "target": {
+          "role": "combobox",
+          "name": "Type your state",
+          "placeholder": "Type your state",
+          "position": {
+            "index": 1,
+            "of": 2
+          }
+        },
+        "key": "Enter"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/parkingmd-entries.e2e.ts::second%20Type%20your%20state%20field%20opens%20the%20Texas%20page",
+      "targetId": "web",
+      "instructionDigest": "546a03e71467cced6ad306a8f669ee5949cb4f30f8e00dc894ee3ed0a5432feb",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Typed Texas in the second Type your state field and pressed Enter. The site opened the Texas page at /texas/handicap-placard (“Get Your Texas Handicap Parking Permit Online Today”). The cookie notice did not close the list.",
+    "startPath": "https://parkingmd.com/",
+    "endPath": "https://parkingmd.com/texas/handicap-placard",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "DMV won't issue placard without this doctor-signed form"
+      },
+      {
+        "role": "button",
+        "name": "Accessibility widget — Press Alt+A to open/close"
+      },
+      {
+        "text": "DMV won't issue placard without this doctor-signed form"
+      },
+      {
+        "text": "FAST, EASY, AND AFFORDABLE"
+      },
+      {
+        "role": "heading",
+        "name": "Get Your Texas Handicap Parking Permit Online Today"
+      },
+      {
+        "text": "We provide the physician-signed DMV forms required for your handicap placard."
+      },
+      {
+        "role": "image",
+        "name": "Checkmark icon"
+      },
+      {
+        "text": "100% Online – Skip the DMV Lines"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Welcome to ParkingMD"
+      },
+      {
+        "role": "heading",
+        "name": "Get Your Handicap Parking Permit Evaluation Online"
+      },
+      {
+        "text": "Connect with licensed physicians online to complete your DMV disability parking permit evaluation, without ever leaving home."
+      },
+      {
+        "text": "Type your state"
+      },
+      {
+        "role": "combobox",
+        "name": "Type your state",
+        "placeholder": "Type your state"
+      },
+      {
+        "text": "3 Simple Steps to Get Your"
+      },
+      {
+        "text": "Handicap Parking Permit"
+      },
+      {
+        "text": "Skip the wait at the doctor's office. Schedule your DMV disability parking permit evaluation from home."
+      }
+    ],
+    "endWaitMs": 16332,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

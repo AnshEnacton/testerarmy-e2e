@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-04T07:03:04.961Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"No\"",
+        "target": {
+          "role": "button",
+          "name": "No"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/psd.e2e.ts::new%20patient%20completes%20a%20PSD%20letter%20through%20confirmation",
+      "targetId": "web",
+      "instructionDigest": "2e3527ed12dd36056e4fdce43708939ae3c1813aac75c7e9b22983dac63646f7",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "xai.responses",
+      "model": "grok-4.7"
+    },
+    "summary": "Answered No on the last screening question. The page left the questionnaire and is now on /psd/register (“You’re one step away!”) with the registration form. Did not fill that form or go back.",
+    "startPath": "/psd/onboarding?step=psd_suicide_plan",
+    "endPath": "/psd/register",
+    "endAnchors": [
+      {
+        "text": "Register"
+      },
+      {
+        "role": "heading",
+        "name": "You’re one step away!"
+      },
+      {
+        "text": "Enter your details to see if you qualify for a PSD letter"
+      },
+      {
+        "text": "First Name"
+      },
+      {
+        "role": "textbox",
+        "name": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      {
+        "text": "Last Name"
+      },
+      {
+        "role": "textbox",
+        "name": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      {
+        "text": "Phone Number"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Assessment"
+      },
+      {
+        "text": "Did your thoughts include a plan or intent to commit suicide?"
+      },
+      {
+        "text": "Yes"
+      },
+      {
+        "text": "No"
+      },
+      {
+        "role": "image",
+        "name": "A service dog"
+      },
+      {
+        "role": "button",
+        "name": "Yes"
+      },
+      {
+        "role": "button",
+        "name": "No"
+      }
+    ],
+    "endWaitMs": 10153,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "6caadef8443746a353f6093f9a540c9f144b3836ee4fec279866843937ebc057",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e908e4cd00193303d8dd2122c49613e70ce80b32937079509f6be24aaadefcdf",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
